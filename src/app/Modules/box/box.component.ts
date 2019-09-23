@@ -29,14 +29,8 @@ export class BoxComponent {
 
   currentState:any='initial';
   elevation : string = ""
-  truncatingStyle : string = "";
   constructor(private router: Router) { 
     this.transition();
-  }
-
-  ngOnInit()
-  {
-    this.truncatingStyle = this.truncating ? 'collapse' : 'expand';
   }
 
   transition(){

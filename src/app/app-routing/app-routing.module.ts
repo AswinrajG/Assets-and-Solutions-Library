@@ -6,10 +6,12 @@ import { AssetDetailsComponent} from "../asset-details/asset-details.component";
 import { EmailAutomationComponent} from "../email-automation/email-automation.component";
 import { SslAssetComponent} from "../ssl-asset/ssl-asset.component";
 import { EmployeeHelpdeskComponent} from "../employee-helpdesk/employee-helpdesk.component";
+import { LoginComponent} from "../login/login.component";
 
 
 const routes: Routes = [
-  { path:'',redirectTo: '/home', pathMatch: 'full' },
+  { path:'',redirectTo: '/login', pathMatch: 'full' },
+  { path:"login",component:LoginComponent},
   { path:"home", component: HomeComponent },
   { path:"dashboard", component: DashboardComponent},
   { path:"asset/:id", component:AssetDetailsComponent },

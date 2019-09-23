@@ -4,7 +4,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatVideoModule } from 'mat-video';
 
 import { TruncateModule } from '@yellowspot/ng-truncate';
-
+// import { slick } from 'angular-slick'
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +23,7 @@ import { AssetDetailsComponent } from './asset-details/asset-details.component';
 import { EmailAutomationComponent } from './email-automation/email-automation.component';
 import { SslAssetComponent } from './ssl-asset/ssl-asset.component';
 import { EmployeeHelpdeskComponent } from './employee-helpdesk/employee-helpdesk.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -38,7 +39,8 @@ import { EmployeeHelpdeskComponent } from './employee-helpdesk/employee-helpdesk
     AssetDetailsComponent,
     EmailAutomationComponent,
     SslAssetComponent,
-    EmployeeHelpdeskComponent
+    EmployeeHelpdeskComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

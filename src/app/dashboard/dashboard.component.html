@@ -1,73 +1,41 @@
-<mat-drawer-container class="bg">
-    <mat-drawer mode="side" opened >
+<mat-drawer-container >
+    <mat-drawer mode="side" position="end" opened >
         <div >
-            <app-navbar (clickInfo)= "getClickInfo($event)" ></app-navbar>
+            <app-navbar  ></app-navbar>
         </div>
     </mat-drawer>
     <mat-drawer-content style="overflow: hidden">
         <div>
             <app-header [industries] = "industry" [functions] = "function" ></app-header>
         </div>
-        <div  class="pl2" style="height:615px ;     margin-top: 108px;">
+        <div  class="pl2" style="height:615px">
+
+
+            
+
+            
             <div class="row pv3" *ngIf="r1data != []">
+                <h4>Header 1</h4>
                 <div class="col-md-3" *ngFor="let data of r1data; let i=index;">
                     <app-box [Data]="r1data[i]" [image]="r1images[i]" [title]="r1titles[i]" [urls]="r1urls[i]"> </app-box>
                 </div>
             </div>
 
              <div class="row " *ngIf="r2data != []">
+                <h4>Header 2</h4>
                 <div class="col-md-3" *ngFor="let data of r2data; let i=index;">
                     <app-box [Data]="r2data[i]" [image]="r2images[i]" [title]="r2titles[i]" [urls]="r2urls[i]"> </app-box>
                 </div>
             </div>
 
              <div class="row pv3" *ngIf="r3data != []">
+                 <h4>Header 3</h4>
                 <div class="col-md-3" *ngFor="let data of r3data; let i=index;">
                     <app-box [Data]="r3data[i]" [image]="r3images[i]" [title]="r3titles[i]" [urls]="r3urls[i]"> </app-box>
                 </div>
             </div>
         </div>
-
-        <!-- <div  class="pl2">
-            <div class="row pv3">
-                <div class="col-md-3">
-                    <app-box [Data]="data[0]" [image]="images[0]" [title]="titles[0]" [urls]="urls[0]"> </app-box>
-                </div>
-                <div class="col-md-3">
-                    <app-box [Data]="data[1]" [image]="images[1]" [title]="titles[1]" [urls]="urls[1]"> </app-box>
-                </div>
-                <div class="col-md-3">
-                    <app-box [Data]="data[2]" [image]="images[3]" [title]="titles[2]" [urls]="urls[2]"> </app-box>
-                </div>
-                <div class="col-md-3">
-                    <app-box [Data]="data[3]" [image]="images[3]" [title]="titles[3]" [urls]="urls[3]"> </app-box>
-                </div>
-            </div>
-
-             <div class="row ">
-                <div class="col-md-3">
-                    <app-box [Data]="data[4]" [image]="images[4]" [title]="titles[4]" [urls]="urls[4]"> </app-box>
-                </div>
-                <div class="col-md-3">
-                    <app-box [Data]="data[5]" [image]="images[5]" [title]="titles[5]" [urls]="urls[5]"> </app-box>
-                </div>
-                <div class="col-md-3">
-                    <app-box [Data]="data[6]" [image]="images[6]" [title]="titles[6]" [urls]="urls[6]"> </app-box>
-                </div>
-                <div class="col-md-3">
-                    <app-box [Data]="data[7]" [image]="images[7]" [title]="titles[7]" [urls]="urls[7]"> </app-box>
-                </div>
-            </div>
-
-             <div class="row pv3">
-                <div class="col-md-3">
-                    <app-box [Data]="data[8]" [image]="images[8]" [title]="titles[8]" [urls]="urls[8]"> </app-box>
-                </div>
-                <div class="col-md-3">
-                    <app-box [Data]="data[9]" [image]="images[9]" [title]="titles[9]" [urls]="urls[9]"> </app-box>
-                </div>
-            </div>
-        </div> -->
+        
 
         <button [routerLink] = "['/home']" style = "float:right;position:fixed;bottom:2%;right:2%;background-color: rgb(255,230,0);color:black;border:1px solid black" _ngcontent-vqc-c21="" mat-fab="" class="mat-fab mat-accent">
             <span style="color:black;font-size:22px"class="glyphicon glyphicon-home"></span>
