@@ -13,6 +13,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
+import {MatInputModule} from '@angular/material/input';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
@@ -24,6 +25,7 @@ import { EmailAutomationComponent } from './email-automation/email-automation.co
 import { SslAssetComponent } from './ssl-asset/ssl-asset.component';
 import { EmployeeHelpdeskComponent } from './employee-helpdesk/employee-helpdesk.component';
 import { LoginComponent } from './login/login.component';
+
 
 
 
@@ -51,7 +53,8 @@ import { LoginComponent } from './login/login.component';
     MatGridListModule,
     MatListModule,
     MatSidenavModule,
-    MatVideoModule
+    MatVideoModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
