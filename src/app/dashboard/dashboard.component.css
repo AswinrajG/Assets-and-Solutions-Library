@@ -31,7 +31,7 @@ mat-grid-tile{
 
   .card--content {
     background-color: white;
-    min-width: 300px;
+    min-width: 271px;
     margin: 5px;
     overflow-y:hidden
   }
@@ -55,5 +55,9 @@ mat-grid-tile{
   .header-style{
     font-weight: bold;
     margin-left: 0.8%;
+  }
+
+  .m5{
+    margin-left:5% !important
   }
 
