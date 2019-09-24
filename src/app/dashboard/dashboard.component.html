@@ -23,13 +23,23 @@
             </div>
         </mat-toolbar>
     </div>
+
+    <!-- Header Ends here -->
+
+
     <mat-drawer-container>
-        <mat-drawer mode="side" position="end" opened style="background-color: #fafafa">
-            <div>
+
+
+        <!-- Side Nav -->
+        <mat-drawer style="margin-right:5% !important;background-color: #E8E8E8" mode="side" position="end" opened>
+            <div >
                 <app-navbar></app-navbar>
             </div>
         </mat-drawer>
-        <mat-drawer-content style="overflow: hidden">
+        <!-- Side Nav Ends -->
+
+        <!-- Dashboard Main Content -->
+        <mat-drawer-content class = "m5" style="overflow:hidden;">
 
 
             <div class="pl2">
@@ -101,6 +111,8 @@
             <div class="mat-button-focus-overlay"></div>
         </button> -->
         </mat-drawer-content>
+
+        <!-- Dashboard Main Content -->
 
 
 
