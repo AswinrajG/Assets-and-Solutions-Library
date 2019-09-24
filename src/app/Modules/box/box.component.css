@@ -3,34 +3,22 @@
     border: 0.5px solid #f5f5f5;
     padding: 4%; 
     width: 95%;
-    height: 75%; 
-    position: relative;
+    height: 200px;
+    background-color: white;    
     border-left-color:#013a8f;
-    border-left-width: 2px
+    border-left-width: 2px;
+    border-bottom-color:#adadad;
+    border-bottom-width: 1.5px
   }
   p{
     /* color: white */
 }
 
-.image{
-    position: relative;
-    top: -22px;
-    left: -9%;
-    width: 22%;
-
-}
-
-.image2{
-    position: relative;
-    top: -21px;
-    left: -25%;
-    width: 12%;
-
-}
 
 .shadow
 {
-    box-shadow: 0px 0px 0px 5px #e4e4e4;
+    box-shadow: 5px 05px 5px 5px #bbbbbb;
+    
 }
 
 .showMore {

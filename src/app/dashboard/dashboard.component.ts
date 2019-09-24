@@ -111,15 +111,15 @@ export class DashboardComponent implements OnInit {
       
       this.r1images = arr1.slice(0,4)
       this.r2images = arr1.slice(4,8)
-      this.r3images = arr1.slice(8,arr.length)
+      this.r3images = arr1.slice(0,arr.length)
 
       this.r1titles = arr2.slice(0,4)
       this.r2titles = arr2.slice(4,8)
-      this.r3titles = arr2.slice(8,arr.length)
+      this.r3titles = arr2.slice(0,arr.length)
 
       this.r1urls = arr3.slice(0,4)
       this.r2urls = arr3.slice(4,8)
-      this.r3urls = arr3.slice(8,arr.length)
+      this.r3urls = arr3.slice(0,arr.length)
 
     } else if( arr.length == 7 || (arr.length < 7 && arr.length>=4) ) {
       this.r1data = arr.slice(0,4)

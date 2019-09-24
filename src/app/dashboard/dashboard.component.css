@@ -30,8 +30,7 @@ mat-grid-tile{
   }
 
   .card--content {
-    background-color: white;
-    min-width: 271px;
+    min-width: 350px;
     margin: 5px;
     overflow-y:hidden
   }

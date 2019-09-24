@@ -1,8 +1,12 @@
-<div [@changeDivSize]=currentState class="box" [ngClass]="elevation" (mouseover)="changeStyle($event)"
-    (mouseout)="changeStyle($event)" style="position:relative;height: 272px; box-shadow: 0 0 10px rgba(0,0,0,0.6);
+<!-- <div [@changeDivSize]=currentState class="box" [ngClass]="elevation" (mouseover)="changeStyle($event)"
+    (mouseout)="changeStyle($event)" style="position:relative;height: 272px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
     -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-    -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);">
+    -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);"> -->
+    <div>
+<div [@changeDivSize]=currentState class="box" [ngClass]="elevation" (mouseover)="changeStyle($event)"
+    (mouseout)="changeStyle($event)" >
     <div>
         <p style="color: rgb(0, 110, 255); font-weight: bold;"> Hearder</p>
         <p (click)="goToAssetDetails()"> <a >{{title}}</a></p>
@@ -10,18 +14,20 @@
         <div *ngIf="Data.length <= limit">{{Data}}</div>
         <div *ngIf="truncating && Data.length > limit">
             <p>{{Data | truncate : limit}}</p>
-            <p class="showMore" (click)="truncating = false">show more</p>
+            <!-- <p class="showMore" (click)="truncating = false">show more</p> -->
             
         </div>
         <div *ngIf="!truncating && Data.length > limit">
             <p>  {{Data}} </p>
             <p class="showMore" (click)="truncating = true">show less</p>
         </div>
+        <br />
+        <br />
 
         <mat-divider></mat-divider>
         <div>
-            <img src="../../../assets/EYLogo.png"/>
+            <img src="../../../assets/EYLogo.png" style="opacity: 0.3; width: 30%; padding-top: 5px"  />
         </div>
     </div>
-    
+</div>   
 </div>
