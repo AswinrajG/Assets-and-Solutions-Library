@@ -18,6 +18,8 @@ import { DragScrollModule } from 'ngx-drag-scroll';
 import {ScrollingModule} from "@angular/cdk/scrolling";
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon'; 
+import {MatChipsModule} from '@angular/material/chips';
+import { JwSocialButtonsModule } from 'jw-angular-social-buttons';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
@@ -62,7 +64,9 @@ import { LoginComponent } from './login/login.component';
     DragScrollModule,
     ScrollingModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatChipsModule,
+    JwSocialButtonsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
