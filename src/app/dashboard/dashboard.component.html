@@ -1,93 +1,95 @@
 <div>
 
-        <div>
-            <app-header ></app-header>
-        </div>
-    
-        <div>
-                <mat-toolbar ></mat-toolbar>
-        </div>
-<mat-drawer-container >
-    <mat-drawer mode="side" position="end" opened >
-        <div >
-            <app-navbar  ></app-navbar>
-        </div>
-    </mat-drawer>
-    <mat-drawer-content style="overflow: hidden">
-        
+    <div>
+        <app-header></app-header>
+    </div>
 
-        <div  class="pl2">
+    <div>
+        <mat-toolbar></mat-toolbar>
+    </div>
+    <mat-drawer-container>
+        <mat-drawer mode="side" position="end" opened>
+            <div>
+                <app-navbar></app-navbar>
+            </div>
+        </mat-drawer>
+        <mat-drawer-content style="overflow: hidden">
 
-         
 
-            <h4>Header 1</h4>
-            <section class="card1" *ngIf="r1data != []">
+            <div class="pl2">
+
+                <h4 class="header-style">Header 1</h4>
+                <section class="card1" *ngIf="r1data != []">
                     <!-- <div class="card--content" *ngFor="let data of r1data; let i=index;" >
                             <app-box [Data]="r1data[i]" [image]="r1images[i]" [title]="r1titles[i]" [urls]="r1urls[i]"> </app-box>
                     </div> -->
 
                     <div class="card--content" *ngFor="let data of r3data; let i=index;">
-                            <app-box [Data]="r3data[i]" [image]="r3images[i]" [title]="r3titles[i]" [urls]="r3urls[i]"> </app-box>
+                        <app-box [Data]="r3data[i]" [image]="r3images[i]" [title]="r3titles[i]" [urls]="r3urls[i]">
+                        </app-box>
                     </div>
-                </section> 
+                </section>
 
-            <h4>Header 2</h4>
-            <section class="card1" *ngIf="r1data != []">
+                <h4 class="header-style" style="margin-top:5%">Header 2</h4>
+                <section class="card1" *ngIf="r1data != []">
                     <!-- <div class="card--content" *ngFor="let data of r1data; let i=index;" >
                             <app-box [Data]="r1data[i]" [image]="r1images[i]" [title]="r1titles[i]" [urls]="r1urls[i]"> </app-box>
                     </div> -->
 
                     <div class="card--content" *ngFor="let data of r3data; let i=index;">
-                            <app-box [Data]="r3data[i]" [image]="r3images[i]" [title]="r3titles[i]" [urls]="r3urls[i]"> </app-box>
+                        <app-box [Data]="r3data[i]" [image]="r3images[i]" [title]="r3titles[i]" [urls]="r3urls[i]">
+                        </app-box>
                     </div>
-     </section> 
-   
-                    <h4>Header 3</h4>
-                    <section class="card1" *ngIf="r1data != []">
-                            <!-- <div class="card--content" *ngFor="let data of r1data; let i=index;" >
+                </section>
+
+                <h4 class="header-style" style="margin-top:5%">Header 3</h4>
+                <section class="card1" *ngIf="r1data != []">
+                    <!-- <div class="card--content" *ngFor="let data of r1data; let i=index;" >
                                     <app-box [Data]="r1data[i]" [image]="r1images[i]" [title]="r1titles[i]" [urls]="r1urls[i]"> </app-box>
                             </div> -->
 
-                            <div class="card--content" *ngFor="let data of r3data; let i=index;">
-                                    <app-box [Data]="r3data[i]" [image]="r3images[i]" [title]="r3titles[i]" [urls]="r3urls[i]"> </app-box>
-                            </div>
-                      
-    
-    
-                          </section> 
+                    <div class="card--content" *ngFor="let data of r3data; let i=index;">
+                        <app-box [Data]="r3data[i]" [image]="r3images[i]" [title]="r3titles[i]" [urls]="r3urls[i]">
+                        </app-box>
+                    </div>
 
-                          <h4>Header 4</h4>
-                          <section class="card1" *ngIf="r1data != []">
-                                  <!-- <div class="card--content" *ngFor="let data of r1data; let i=index;" >
+
+
+                </section>
+
+                <h4 class="header-style" style="margin-top:5%">Header 4</h4>
+                <section class="card1" *ngIf="r1data != []">
+                    <!-- <div class="card--content" *ngFor="let data of r1data; let i=index;" >
                                           <app-box [Data]="r1data[i]" [image]="r1images[i]" [title]="r1titles[i]" [urls]="r1urls[i]"> </app-box>
                                   </div> -->
-      
-                                  <div class="card--content" *ngFor="let data of r3data; let i=index;">
-                                          <app-box [Data]="r3data[i]" [image]="r3images[i]" [title]="r3titles[i]" [urls]="r3urls[i]"> </app-box>
-                                  </div>
-                            
-          
-          
-                                </section> 
-                              
-                        
-            
 
-                  
-        </div>
-        
+                    <div class="card--content" *ngFor="let data of r3data; let i=index;">
+                        <app-box [Data]="r3data[i]" [image]="r3images[i]" [title]="r3titles[i]" [urls]="r3urls[i]">
+                        </app-box>
+                    </div>
 
-        <!-- <button [routerLink] = "['/home']" style = "float:right;position:fixed;bottom:2%;right:2%;background-color: rgb(255,230,0);color:black;border:1px solid black" _ngcontent-vqc-c21="" mat-fab="" class="mat-fab mat-accent">
+
+
+                </section>
+
+
+
+
+
+            </div>
+
+
+            <!-- <button [routerLink] = "['/home']" style = "float:right;position:fixed;bottom:2%;right:2%;background-color: rgb(255,230,0);color:black;border:1px solid black" _ngcontent-vqc-c21="" mat-fab="" class="mat-fab mat-accent">
             <span style="color:black;font-size:22px"class="glyphicon glyphicon-home"></span>
             <div class="mat-button-ripple mat-ripple mat-button-ripple-round" matripple=""></div>
             <div class="mat-button-focus-overlay"></div>
         </button> -->
-    </mat-drawer-content>
+        </mat-drawer-content>
 
 
 
-    
-    
-</mat-drawer-container>
+
+
+    </mat-drawer-container>
 
 </div>

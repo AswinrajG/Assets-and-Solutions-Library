@@ -39,3 +39,8 @@ mat-grid-tile{
     display: none;
   }
 
+  .header-style{
+    font-weight: bold;
+    margin-left: 0.8%;
+  }
+

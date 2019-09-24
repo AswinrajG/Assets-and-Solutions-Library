@@ -1,5 +1,8 @@
 <div [@changeDivSize]=currentState class="box" [ngClass]="elevation" (mouseover)="changeStyle($event)"
-    (mouseout)="changeStyle($event)" style="position:relative;height: 272px;">
+    (mouseout)="changeStyle($event)" style="position:relative;height: 272px; box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);">
     <div>
         <p style="color: rgb(0, 110, 255); font-weight: bold;"> Hearder</p>
         <p (click)="goToAssetDetails()"> <a >{{title}}</a></p>
