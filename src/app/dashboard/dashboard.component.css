@@ -21,3 +21,21 @@ mat-grid-tile{
 {
     overflow: hidden !important;
 }
+
+.card1 {
+    min-width: 100%;
+    min-height: 200px;
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .card--content {
+    background-color: white;
+    min-width: 300px;
+    margin: 5px;
+    overflow-y:hidden
+  }
+  .card1::-webkit-scrollbar {
+    display: none;
+  }
+

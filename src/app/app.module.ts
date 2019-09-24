@@ -14,6 +14,10 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
 import {MatInputModule} from '@angular/material/input';
+import { DragScrollModule } from 'ngx-drag-scroll';
+import {ScrollingModule} from "@angular/cdk/scrolling";
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon'; 
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
@@ -54,7 +58,11 @@ import { LoginComponent } from './login/login.component';
     MatListModule,
     MatSidenavModule,
     MatVideoModule,
-    MatInputModule
+    MatInputModule,
+    DragScrollModule,
+    ScrollingModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

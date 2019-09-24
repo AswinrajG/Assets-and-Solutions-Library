@@ -1,3 +1,12 @@
+<div>
+
+        <div>
+            <app-header ></app-header>
+        </div>
+    
+        <div>
+                <mat-toolbar ></mat-toolbar>
+        </div>
 <mat-drawer-container >
     <mat-drawer mode="side" position="end" opened >
         <div >
@@ -5,46 +14,80 @@
         </div>
     </mat-drawer>
     <mat-drawer-content style="overflow: hidden">
-        <div>
-            <app-header [industries] = "industry" [functions] = "function" ></app-header>
-        </div>
-        <div  class="pl2" style="height:615px">
+        
 
+        <div  class="pl2">
 
+         
+
+            <h4>Header 1</h4>
+            <section class="card1" *ngIf="r1data != []">
+                    <!-- <div class="card--content" *ngFor="let data of r1data; let i=index;" >
+                            <app-box [Data]="r1data[i]" [image]="r1images[i]" [title]="r1titles[i]" [urls]="r1urls[i]"> </app-box>
+                    </div> -->
+
+                    <div class="card--content" *ngFor="let data of r3data; let i=index;">
+                            <app-box [Data]="r3data[i]" [image]="r3images[i]" [title]="r3titles[i]" [urls]="r3urls[i]"> </app-box>
+                    </div>
+                </section> 
+
+            <h4>Header 2</h4>
+            <section class="card1" *ngIf="r1data != []">
+                    <!-- <div class="card--content" *ngFor="let data of r1data; let i=index;" >
+                            <app-box [Data]="r1data[i]" [image]="r1images[i]" [title]="r1titles[i]" [urls]="r1urls[i]"> </app-box>
+                    </div> -->
+
+                    <div class="card--content" *ngFor="let data of r3data; let i=index;">
+                            <app-box [Data]="r3data[i]" [image]="r3images[i]" [title]="r3titles[i]" [urls]="r3urls[i]"> </app-box>
+                    </div>
+     </section> 
+   
+                    <h4>Header 3</h4>
+                    <section class="card1" *ngIf="r1data != []">
+                            <!-- <div class="card--content" *ngFor="let data of r1data; let i=index;" >
+                                    <app-box [Data]="r1data[i]" [image]="r1images[i]" [title]="r1titles[i]" [urls]="r1urls[i]"> </app-box>
+                            </div> -->
+
+                            <div class="card--content" *ngFor="let data of r3data; let i=index;">
+                                    <app-box [Data]="r3data[i]" [image]="r3images[i]" [title]="r3titles[i]" [urls]="r3urls[i]"> </app-box>
+                            </div>
+                      
+    
+    
+                          </section> 
+
+                          <h4>Header 4</h4>
+                          <section class="card1" *ngIf="r1data != []">
+                                  <!-- <div class="card--content" *ngFor="let data of r1data; let i=index;" >
+                                          <app-box [Data]="r1data[i]" [image]="r1images[i]" [title]="r1titles[i]" [urls]="r1urls[i]"> </app-box>
+                                  </div> -->
+      
+                                  <div class="card--content" *ngFor="let data of r3data; let i=index;">
+                                          <app-box [Data]="r3data[i]" [image]="r3images[i]" [title]="r3titles[i]" [urls]="r3urls[i]"> </app-box>
+                                  </div>
+                            
+          
+          
+                                </section> 
+                              
+                        
             
 
-            
-            <div class="row pv3" *ngIf="r1data != []">
-                <h4>Header 1</h4>
-                <div class="col-md-3" *ngFor="let data of r1data; let i=index;">
-                    <app-box [Data]="r1data[i]" [image]="r1images[i]" [title]="r1titles[i]" [urls]="r1urls[i]"> </app-box>
-                </div>
-            </div>
-
-             <div class="row " *ngIf="r2data != []">
-                <h4>Header 2</h4>
-                <div class="col-md-3" *ngFor="let data of r2data; let i=index;">
-                    <app-box [Data]="r2data[i]" [image]="r2images[i]" [title]="r2titles[i]" [urls]="r2urls[i]"> </app-box>
-                </div>
-            </div>
-
-             <div class="row pv3" *ngIf="r3data != []">
-                 <h4>Header 3</h4>
-                <div class="col-md-3" *ngFor="let data of r3data; let i=index;">
-                    <app-box [Data]="r3data[i]" [image]="r3images[i]" [title]="r3titles[i]" [urls]="r3urls[i]"> </app-box>
-                </div>
-            </div>
+                  
         </div>
         
 
-        <button [routerLink] = "['/home']" style = "float:right;position:fixed;bottom:2%;right:2%;background-color: rgb(255,230,0);color:black;border:1px solid black" _ngcontent-vqc-c21="" mat-fab="" class="mat-fab mat-accent">
+        <!-- <button [routerLink] = "['/home']" style = "float:right;position:fixed;bottom:2%;right:2%;background-color: rgb(255,230,0);color:black;border:1px solid black" _ngcontent-vqc-c21="" mat-fab="" class="mat-fab mat-accent">
             <span style="color:black;font-size:22px"class="glyphicon glyphicon-home"></span>
             <div class="mat-button-ripple mat-ripple mat-button-ripple-round" matripple=""></div>
             <div class="mat-button-focus-overlay"></div>
-        </button>
+        </button> -->
     </mat-drawer-content>
+
+
 
     
     
 </mat-drawer-container>
 
+</div>

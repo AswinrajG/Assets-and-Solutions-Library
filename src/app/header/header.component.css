@@ -1,14 +1,11 @@
-.centered {
-    position: absolute;
-    top: 9%;
-    left: 2%;
-    /* transform: translate(-50%, -50%); */
-  }
-p{
-    font-size: x-large;
-    font-weight: bold
+.example-fill-remaining-space {
+  /* This fills the remaining space, by using flexbox. 
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
 }
-
-.pr1 {
-  padding-right: 1rem;
+.bg {
+  background-color: rgb(55, 73, 100)
+}
+.font-white {
+  color: aliceblue
 }

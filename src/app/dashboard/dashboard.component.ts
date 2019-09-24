@@ -22,54 +22,37 @@ export class DashboardComponent implements OnInit {
 
   public KYC = `EY’s KYC digitization solution reliably extracts information from scanned images 
   of proof of identity (PoI) documents such as passport, PAN, national ID cards etc. with minimal 
-  training effort. The solution also enables quality and compliance testing along with comparison 
-  using biometric data. `;
+  training effort. `;
 
-  public ENESA =`Many functions within any organization such as customer support, help desks etc. 
-  have to deal with user generated queries. These queries are received via multiple channels such 
-  as Email, Web, Phone, Chat etc. Due to the unstructured nature of the data, the queries require 
-  human agents for resolution, thus making it a very costly and time consuming process.
-  ENESA is a unique solution build by EY which uses Natural Language Processing (NLP) to interpret 
+  public ENESA =`ENESA is a unique solution build by EY which uses Natural Language Processing (NLP) to interpret 
   the query, which is then automatically classified, tagged and allocated in a BPM/Ticketing system. 
   ENESA sends acknowledgement, filters spam and auto resolves cases that doesn’t require human judgement.`;
 
-  public SSI_Extraction =`Across organizations there are various documents containing tabular data 
-  in different unstructured formats coming from different sources which require human intervention 
-  for standardization and further processing. EY has built a customisable solution which can be 
+  public SSI_Extraction =`EY has built a customisable solution which can be 
   leveraged to extract tabular information efficiently from different document formats automatically 
   henceforth reducing processing time and saving manual effort.`;
 
-  public VendorOn_Boarding  =`Vendor management is a major task in most of the organizations. 
-  EY’s vendor onboarding and helpdesk bot helps the vendors receive quick support and immediate 
-  responses to their queries during onboarding and afterwards directly on Kaizala. It helps save 
-  time and makes the process smooth in terms of the vendor experience.`;
+  public VendorOn_Boarding  =`EY’s vendor onboarding and helpdesk bot helps the vendors receive quick support and immediate 
+  responses to their queries during onboarding and afterwards directly on Kaizala.`;
 
-  public KPI_Dashboard  =`Employees in any team of an organization have to access multiple systems or 
-  reach out to various teams to gather insight into their KPIs and achievements. EY’s KPI dashboarding 
-  solution provides instant access to the team to their KPIs and dashboards on the Kaizala app. Management 
+  public KPI_Dashboard  =`EY’s KPI dashboarding solution provides instant access to the team to their KPIs and dashboards on the Kaizala app. Management 
   dashboards may also be viewed directly on the app, restricting user access as per requirement.`;
 
   public Employee_Helpdesk  =`Quick answers for all employee queries on the go – using EY’s employee 
   helpdesk solution, the employees get immediate responses to their queries on Kaizala app.`;
 
   public Customized_Alert  =`Have periodic updates that need to be sent out to your team? Using EY’s 
-  customized alert bot, such updates can be automatically sent to the employees on Kaizala. It has 
-  the capability to schedule alerts, define the recipients and also capture employee’s response on 
-  it for further action or review.`;
+  customized alert bot, such updates can be automatically sent to the employees on Kaizala.`;
 
-  public Invoice =`Accounts payable/receivable departments of different organizations receive purchase 
-  orders and invoices from multiple vendors. Relevant data is extracted from these documents and fed 
-  into the ERP systems. EY has developed a customized solution involving digitization tools and RPA to 
+  public Invoice =`EY has developed a customized solution involving digitization tools and RPA to 
   process these documents and enter the details in the ERP systems thus reducing manual effort, processing 
   time, error and increasing efficiency.`;
 
-  public ContractDigitization  =`Every organization manages contracts such as service agreements, lease, SOW etc. 
-  A qualified legal team is required to understand and manage these contracts. EY has build this solution which 
+  public ContractDigitization  =`EY has build this solution which 
   helps to extract most commonly used information from the contracts automatically thereby significantly reducing 
   the cost and improving efficiency.`;
 
-  public Survey =`HR in any organization usually float surveys to employees through various channels like mail, 
-  forms etc. EY’s employee satisfaction survey solution on Kaizala provides a single platform to roll out the 
+  public Survey =`EY’s employee satisfaction survey solution on Kaizala provides a single platform to roll out the 
   survey, engage employees, receive their responses, and provide relevant insights over it using any BI tool. `;
   public data = [this.KYC,this.ENESA, this.SSI_Extraction,this.VendorOn_Boarding,
                   this.KPI_Dashboard,this.Employee_Helpdesk,this.Customized_Alert,
@@ -124,7 +107,7 @@ export class DashboardComponent implements OnInit {
     if(arr.length > 7){
       this.r1data = arr.slice(0,4)
       this.r2data = arr.slice(4,8)
-      this.r3data = arr.slice(8,arr.length)
+      this.r3data = arr.slice(0,arr.length)// @Dibin : change this 0 to 8 for previous version
       
       this.r1images = arr1.slice(0,4)
       this.r2images = arr1.slice(4,8)

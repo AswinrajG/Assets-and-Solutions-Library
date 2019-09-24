@@ -1,11 +1,18 @@
-<div class="mv1 mh1">
-    <div class="centered">
-        <p style="font-size: x-large" *ngIf="industries !='' "> {{industries}} {{functions}} </p>
-        <p style="font-size: x-large" *ngIf="industries == ''"> {{title}} </p>
+<mat-toolbar class="bg">
+    <span class="font-white">Innovation Portal</span>
+
+    <!-- This fills the remaining space of the current row -->
+    <span class="example-fill-remaining-space"></span>
+    <div class="font-white">
+        <span >Administration</span>&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <i class="material-icons">home</i> &nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="material-icons">desktop_windows</i> &nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="material-icons">photo_library</i> &nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="material-icons">mail</i> &nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="material-icons">notifications_none</i> &nbsp;&nbsp;&nbsp;&nbsp;
 
     </div>
-    <div>
-            <img src="../../assets/Header0_0.png" width="1%" class="pr1"/>
-        <img src="../../assets/Header.png" height="50%" width="99%">
-    </div>
-</div>
+    <!-- <i class="material-icons">account_circle</i> -->
+    <i class="material-icons">person</i>
+</mat-toolbar>
