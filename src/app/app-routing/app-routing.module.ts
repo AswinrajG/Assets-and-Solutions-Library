@@ -8,9 +8,12 @@ import { SslAssetComponent} from "../ssl-asset/ssl-asset.component";
 import { EmployeeHelpdeskComponent} from "../employee-helpdesk/employee-helpdesk.component";
 import { LoginComponent} from "../login/login.component";
 
+import { SampleComponent} from '../Pages/sample/sample.component'
+
 
 const routes: Routes = [
   { path:'',redirectTo: '/dashboard', pathMatch: 'full' },
+  { path:"page",component:SampleComponent},
   { path:"login",component:LoginComponent},
   { path:"home", component: HomeComponent },
   { path:"dashboard", component: DashboardComponent},

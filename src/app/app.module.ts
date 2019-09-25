@@ -19,7 +19,7 @@ import {ScrollingModule} from "@angular/cdk/scrolling";
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon'; 
 import {MatChipsModule} from '@angular/material/chips';
-import { JwSocialButtonsModule } from 'jw-angular-social-buttons';
+// import { JwSocialButtonsModule } from 'jw-angular-social-buttons';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
@@ -31,6 +31,7 @@ import { EmailAutomationComponent } from './email-automation/email-automation.co
 import { SslAssetComponent } from './ssl-asset/ssl-asset.component';
 import { EmployeeHelpdeskComponent } from './employee-helpdesk/employee-helpdesk.component';
 import { LoginComponent } from './login/login.component';
+import { SampleComponent } from './Pages/sample/sample.component';
 
 
 
@@ -48,7 +49,8 @@ import { LoginComponent } from './login/login.component';
     EmailAutomationComponent,
     SslAssetComponent,
     EmployeeHelpdeskComponent,
-    LoginComponent
+    LoginComponent,
+    SampleComponent
   ],
   imports: [
     BrowserModule,
@@ -66,7 +68,6 @@ import { LoginComponent } from './login/login.component';
     MatToolbarModule,
     MatIconModule,
     MatChipsModule,
-    JwSocialButtonsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

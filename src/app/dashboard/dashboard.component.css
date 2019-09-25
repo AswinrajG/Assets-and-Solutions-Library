@@ -30,27 +30,21 @@ mat-grid-tile{
   }
 
   .card--content {
-    min-width: 350px;
+    min-width: 330px;
     margin: 5px;
-    overflow-y:hidden
+    overflow-y:hidden;
+    margin-right: 15px;
+    margin-bottom: 10px
   }
   .card1::-webkit-scrollbar {
     display: none;
   }
 
   .search {
-    /* This fills the remaining space, by using flexbox. 
-       Every toolbar row uses a flexbox row layout. */
     flex: 1 1 auto;
   }
 
-  .fillSpace {
-    flex: 0 1 auto;
-  }
-  .bottomLine{
-    border-bottom-color:#858688;
-    border-bottom-width: 1px
-   }
+
   .header-style{
     font-weight: bold;
     margin-left: 0.8%;

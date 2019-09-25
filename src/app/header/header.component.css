@@ -1,6 +1,4 @@
 .example-fill-remaining-space {
-  /* This fills the remaining space, by using flexbox. 
-     Every toolbar row uses a flexbox row layout. */
   flex: 1 1 auto;
 }
 .bg {
@@ -9,3 +7,9 @@
 .font-white {
   color: aliceblue
 }
+.fillSpace {
+  flex: 1 1 auto;
+}
+.bottomLine{
+  border-bottom: 1px solid #d1d1d1
+ }
