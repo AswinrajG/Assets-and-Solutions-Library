@@ -5,9 +5,10 @@
     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
     -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);"> -->
     <div>
-<div [@changeDivSize]=currentState class="box"  >
+<div [@changeDivSize]=currentState class="box" [ngClass]="elevation" (mouseover)="changeStyle($event)"
+    (mouseout)="changeStyle($event)" [class.mat-elevation-z12]="true">
     <div>
-        <p style="color: rgb(0, 110, 255); font-weight: bold;"> Hearder</p>
+        <p style="color: rgb(0, 110, 255); font-weight: bold;"> Header</p>
         <p (click)="goToAssetDetails()"> <a >{{title}}</a></p>
         <!-- <p>{{Data}} </p> -->
         <div *ngIf="Data.length <= limit">{{Data}}</div>
