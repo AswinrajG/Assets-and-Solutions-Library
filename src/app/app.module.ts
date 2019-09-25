@@ -19,6 +19,7 @@ import {ScrollingModule} from "@angular/cdk/scrolling";
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon'; 
 import {MatChipsModule} from '@angular/material/chips';
+import {MatCardModule} from '@angular/material/card';
 // import { JwSocialButtonsModule } from 'jw-angular-social-buttons';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -68,6 +69,7 @@ import { SampleComponent } from './Pages/sample/sample.component';
     MatToolbarModule,
     MatIconModule,
     MatChipsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
