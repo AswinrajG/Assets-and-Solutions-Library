@@ -21,60 +21,70 @@
         <mat-drawer-content class = "m5" style="overflow:hidden;">
 
 
-            <div class="pl2">
+            <div class="pl2 pt2">
+                <div >
+                    <span  class="item-heading">Header 1</span>                
+                    <span matTooltip="Info about the header" matTooltipPosition="right" style="opacity: .5" class="item-number" >
+                        &nbsp;<i class="material-icons info-icon-tooltip">info_outline</i>
+                    </span>
+                    <span  class="item-heading">&nbsp;-&nbsp;</span>
+                    <span  >Number</span>
+                </div>
 
-                <h4 class="header-style">Header 1</h4>
-                <section class="card1" *ngIf="r3data != []">
-                    <!-- <div class="card--content" *ngFor="let data of r1data; let i=index;" >
-                            <app-box [Data]="r1data[i]" [image]="r1images[i]" [title]="r1titles[i]" [urls]="r1urls[i]"> </app-box>
-                    </div> -->
-
-                    <div class="card--content" *ngFor="let data of r3data; let i=index;">
-                        <app-box [Data]="r3data[i]" [image]="r3images[i]" [title]="r3titles[i]" [urls]="r3urls[i]">
+                <section class="card1" *ngIf="data != []">
+                    <div class="card--content" *ngFor="let dat of data; let i=index;">
+                        <app-box [Data]="data[i]" [image]="images[i]" [title]="titles[i]" [urls]="urls[i]">
                         </app-box>
                     </div>
                 </section>
 
-                <h4 class="header-style" style="margin-top:5%">Header 2</h4>
-                <section class="card1" *ngIf="r3data != []">
-                    <!-- <div class="card--content" *ngFor="let data of r1data; let i=index;" >
-                            <app-box [Data]="r1data[i]" [image]="r1images[i]" [title]="r1titles[i]" [urls]="r1urls[i]"> </app-box>
-                    </div> -->
+                
 
-                    <div class="card--content" *ngFor="let data of r3data; let i=index;">
-                        <app-box [Data]="r3data[i]" [image]="r3images[i]" [title]="r3titles[i]" [urls]="r3urls[i]">
+                <div >
+                    <span  class="item-heading">Header 2</span>                
+                    <span matTooltip="Info about the header" matTooltipPosition="right" style="opacity: .5" class="item-number" >
+                        &nbsp;<i class="material-icons info-icon-tooltip">info_outline</i>
+                    </span>
+                    <span  class="item-heading">&nbsp;-&nbsp;</span>
+                    <span  >Number</span>
+                </div>
+                <section class="card1" *ngIf="data != []">
+                    <div class="card--content" *ngFor="let dat of data; let i=index;">
+                        <app-box [Data]="data[i]" [image]="images[i]" [title]="titles[i]" [urls]="urls[i]">
                         </app-box>
                     </div>
                 </section>
 
-                <h4 class="header-style" style="margin-top:5%">Header 3</h4>
+
+                <div >
+                    <span  class="item-heading">Header 3</span>                
+                    <span matTooltip="Info about the header" matTooltipPosition="right" style="opacity: .5" class="item-number" >
+                        &nbsp;<i class="material-icons info-icon-tooltip">info_outline</i>
+                    </span>
+                    <span  class="item-heading">&nbsp;-&nbsp;</span>
+                    <span  >Number</span>
+                </div>
                 <section class="card1" *ngIf="r1data != []">
-                    <!-- <div class="card--content" *ngFor="let data of r1data; let i=index;" >
-                                    <app-box [Data]="r1data[i]" [image]="r1images[i]" [title]="r1titles[i]" [urls]="r1urls[i]"> </app-box>
-                            </div> -->
-
-                    <div class="card--content" *ngFor="let data of r3data; let i=index;">
-                        <app-box [Data]="r3data[i]" [image]="r3images[i]" [title]="r3titles[i]" [urls]="r3urls[i]">
+                    <div class="card--content" *ngFor="let dat of data; let i=index;">
+                        <app-box [Data]="data[i]" [image]="images[i]" [title]="titles[i]" [urls]="urls[i]">
                         </app-box>
                     </div>
-
-
-
                 </section>
 
-                <h4 class="header-style" style="margin-top:5%">Header 4</h4>
-                <section class="card1" *ngIf="r3data != []">
-                    <!-- <div class="card--content" *ngFor="let data of r1data; let i=index;" >
-                                          <app-box [Data]="r1data[i]" [image]="r1images[i]" [title]="r1titles[i]" [urls]="r1urls[i]"> </app-box>
-                                  </div> -->
 
-                    <div class="card--content" *ngFor="let data of r3data; let i=index;">
-                        <app-box [Data]="r3data[i]" [image]="r3images[i]" [title]="r3titles[i]" [urls]="r3urls[i]">
+                <div >
+                    <span  class="item-heading">Header 4</span>                
+                    <span matTooltip="Info about the header" matTooltipPosition="right" style="opacity: .5" class="item-number" >
+                        &nbsp;<i class="material-icons info-icon-tooltip">info_outline</i>
+                    </span>
+                    <span  class="item-heading">&nbsp;-&nbsp;</span>
+                    <span  >Number</span>
+                </div>
+                <section class="card1" *ngIf="arr != []">
+                    <div class="card--content" *ngFor="let dat of data; let i=index;">
+                        <app-box [Data]="data[i]" [image]="images[i]" [title]="titles[i]" [urls]="urls[i]">
                         </app-box>
                     </div>
-
-
-
                 </section>
 
 

@@ -14,9 +14,10 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
 import {MatInputModule} from '@angular/material/input';
-import { DragScrollModule } from 'ngx-drag-scroll';
+import {DragScrollModule } from 'ngx-drag-scroll';
 import {ScrollingModule} from "@angular/cdk/scrolling";
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatIconModule} from '@angular/material/icon'; 
 import {MatChipsModule} from '@angular/material/chips';
 import {MatCardModule} from '@angular/material/card';
@@ -69,7 +70,8 @@ import { SampleComponent } from './Pages/sample/sample.component';
     MatToolbarModule,
     MatIconModule,
     MatChipsModule,
-    MatCardModule
+    MatCardModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

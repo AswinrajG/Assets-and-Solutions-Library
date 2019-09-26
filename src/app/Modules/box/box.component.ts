@@ -24,8 +24,9 @@ export class BoxComponent {
   @Input() image: string
   @Input() title: string;
   @Input() urls: string;
-  public limit: number = 35;
+  public limit: number = 200;
   truncating = true;
+  public boxElevation =false
 
   currentState:any='initial';
   elevation : string = ""
@@ -41,7 +42,7 @@ export class BoxComponent {
 };
 
 changeStyle($event){
-  this.elevation = $event.type == 'mouseover' ? 'shadow' : '';
+  this.boxElevation = $event.type == 'mouseover' ? true : false; 
 }
 
 
