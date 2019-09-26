@@ -9,7 +9,12 @@
 }
 .fillSpace {
   flex: 1 1 auto;
+  height: 80%;
 }
 .bottomLine{
   border-bottom: 1px solid #d1d1d1
  }
+
+mat-form-field.mat-form-field {
+  font-size: 12px;
+}

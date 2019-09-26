@@ -22,12 +22,28 @@
 <div class="bottomLine">
     <mat-toolbar style="background-color: white" >
         <div class="fillSpace">
-            <div class="input-group">
+
+            <!-- <form >
+                <mat-form-field class="w-75 ">
+                  <input type="search" matInput >
+                  <mat-icon matSuffix>search</mat-icon>
+                </mat-form-field> 
+            </form> -->
+
+            <mat-form-field appearance="outline" class="w-75 " color="primary">
+                <mat-label>Search</mat-label>
+                <mat-icon matPrefix>search</mat-icon>
+                <input matInput placeholder="Placeholder">
+                <mat-icon matSuffix>refresh</mat-icon>
+            </mat-form-field>
+
+            <!-- <div class="input-group">
                 <input type="text" class="form-control" placeholder="Search for...">
                 <span class="input-group-btn">
                     <button class="btn btn-default" type="button"><i class="material-icons">search</i></button>
                 </span>
-            </div>
+            </div> -->
+                
         </div>
         <!-- <span class="fillSpace"></span> -->
 
