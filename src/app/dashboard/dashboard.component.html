@@ -23,7 +23,7 @@
 
             <div class="pl2 pt2">
                 <div >
-                    <span  class="item-heading">Header 1</span>                
+                    <span  class="item-heading">Capabilities</span>                
                     <span matTooltip="Info about the header" matTooltipPosition="right" style="opacity: .5" class="item-number" >
                         &nbsp;<i class="material-icons info-icon-tooltip">info_outline</i>
                     </span>
@@ -31,9 +31,9 @@
                     <span  >Number</span>
                 </div>
 
-                <section class="card1" *ngIf="data != []">
-                    <div class="card--content" *ngFor="let dat of data; let i=index;">
-                        <app-box [Data]="data[i]" [image]="images[i]" [title]="titles[i]" [urls]="urls[i]">
+                <section class="card1" *ngIf="Capabilities != []">
+                    <div class="card--content" *ngFor="let  header of Capabilities; let i=index;">
+                        <app-box [Header]= "header" [Status]="'Active'" [Data]="data[i]" [image]="images[i]" [title]="titles[i]" [urls]="urls[i]" [Theme]="'Blue'">
                         </app-box>
                     </div>
                 </section>
@@ -41,51 +41,38 @@
                 
 
                 <div >
-                    <span  class="item-heading">Header 2</span>                
+                    <span  class="item-heading">Use cases</span>                
                     <span matTooltip="Info about the header" matTooltipPosition="right" style="opacity: .5" class="item-number" >
                         &nbsp;<i class="material-icons info-icon-tooltip">info_outline</i>
                     </span>
                     <span  class="item-heading">&nbsp;-&nbsp;</span>
                     <span  >Number</span>
                 </div>
-                <section class="card1" *ngIf="data != []">
-                    <div class="card--content" *ngFor="let dat of data; let i=index;">
-                        <app-box [Data]="data[i]" [image]="images[i]" [title]="titles[i]" [urls]="urls[i]">
+                <section class="card1" *ngIf="Usecases != []">
+                    <div class="card--content" *ngFor="let  header of Usecases; let i=index;">
+                        <app-box [Header]= "header" [Status]="'Active'" [Data]="data[i]" [image]="images[i]" [title]="titles[i]" [urls]="urls[i]" [Theme]="'Green'">
                         </app-box>
                     </div>
                 </section>
 
 
                 <div >
-                    <span  class="item-heading">Header 3</span>                
+                    <span  class="item-heading">AI Assets</span>                
                     <span matTooltip="Info about the header" matTooltipPosition="right" style="opacity: .5" class="item-number" >
                         &nbsp;<i class="material-icons info-icon-tooltip">info_outline</i>
                     </span>
                     <span  class="item-heading">&nbsp;-&nbsp;</span>
                     <span  >Number</span>
                 </div>
-                <section class="card1" *ngIf="r1data != []">
-                    <div class="card--content" *ngFor="let dat of data; let i=index;">
-                        <app-box [Data]="data[i]" [image]="images[i]" [title]="titles[i]" [urls]="urls[i]">
+                <section class="card1" *ngIf="AI_Assets != []">
+                    <div class="card--content" *ngFor="let  header of AI_Assets; let i=index;">
+                        <app-box [Header]= "header" [Status]="'Active'" [Data]="data[i]" [image]="images[i]" [title]="titles[i]" [urls]="urls[i]" [Theme]="'Blue'" >
                         </app-box>
                     </div>
                 </section>
 
 
-                <div >
-                    <span  class="item-heading">Header 4</span>                
-                    <span matTooltip="Info about the header" matTooltipPosition="right" style="opacity: .5" class="item-number" >
-                        &nbsp;<i class="material-icons info-icon-tooltip">info_outline</i>
-                    </span>
-                    <span  class="item-heading">&nbsp;-&nbsp;</span>
-                    <span  >Number</span>
-                </div>
-                <section class="card1" *ngIf="arr != []">
-                    <div class="card--content" *ngFor="let dat of data; let i=index;">
-                        <app-box [Data]="data[i]" [image]="images[i]" [title]="titles[i]" [urls]="urls[i]">
-                        </app-box>
-                    </div>
-                </section>
+
 
 
 

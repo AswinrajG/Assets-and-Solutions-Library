@@ -28,11 +28,11 @@
 
 <div class="pv3 pl1" (mouseover)="changeStyle($event)" (mouseout)="changeStyle($event)">
 
-    <mat-card class="example-card" style="border-left: 3px solid rgb(10, 108, 244); margin: 5px;" [class.mat-elevation-z12]="boxElevation">
+    <mat-card class="example-card" style=" margin: 5px;" [class.mat-elevation-z12]="boxElevation" [ngClass]='styleSelector' >
         
         <div style="font-size: 12px; height: 30px; margin-right: 2px; flex-direction: row; box-sizing: border-box; display: flex; place-content: center flex-start; align-items: center;">
-            <span  style="margin-right: 5px; color: rgb(10, 108, 244);">Header</span>
-            <span class="badge txt-white version-type" href="#" style="margin-right: 5px;">Status</span>
+            <span  style="margin-right: 5px; color: rgb(10, 108, 244);">{{Header}}</span>
+            <span class="badge txt-white version-type" href="#" style="margin-right: 5px;">{{Status}}</span>
              <span  style="flex: 1 1 auto;"></span>
         </div>
         <mat-card-header>

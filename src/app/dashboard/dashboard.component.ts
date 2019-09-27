@@ -56,12 +56,46 @@ export class DashboardComponent implements OnInit {
   survey, engage employees, receive their responses, and provide relevant insights over it using any BI tool. `;
   public data = [this.KYC,this.ENESA, this.SSI_Extraction,this.VendorOn_Boarding,
                   this.KPI_Dashboard,this.Employee_Helpdesk,this.Customized_Alert,
-                  this.Invoice,this.ContractDigitization, this.Survey
+                  this.Invoice,this.ContractDigitization, this.Survey,this.KYC,
+                  this.ENESA, this.SSI_Extraction,this.VendorOn_Boarding
   ]
   public industry = ""
   public function = ""
   public industries = ['BFSI', 'Telecom', 'Retail', 'Information Technology', 'Healthcare']
   public functions = ['Operations', 'Marketing & Sales', 'Finance', 'Human Resources', 'Information technology', 'Supply Chain','Legal']
+
+public Capabilities = [
+  "Data Digitization",
+  "Natural Language Processing",
+  "End User Computing tool management",
+  "Productivity Enhancement ",
+  "Digital Operations",
+]
+
+
+public Usecases = [
+  "Contract Digitization",
+  "Digital KYC ",
+  "Accounts receivable/payable",
+  "Email Processing"
+]
+
+
+public AI_Assets = [
+  "Table Extraction",
+  "Clause Extraction",
+  "Entity Extraction",
+  "PAN Data Extraction",
+  "Aadhaar Data Extraction",
+  "Passport Data Extraction",
+  "Fingerprint matching",
+  "Facial Recognition",
+  "Invoice digitization",
+  "Purchase order automation",
+  "Intent and Entities",
+  "Auto reply feature",
+  "BPM integration",
+]
 
 
   constructor() {

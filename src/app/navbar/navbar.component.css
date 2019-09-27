@@ -1,9 +1,4 @@
-p{
-    color: white
-}
-/* button{
-    color: white
-} */
+
 
 .box {
     border-radius: 25px;
@@ -21,12 +16,66 @@ h4{
 .btn-default {
     color: white;
     background-color: rgb(75, 75, 75);
-  }
+}
   
-  .btn-change {
-    color: rgb(255,230,0);
-  }
+.btn-change {
+  color: rgb(255,230,0);
+}
+.mb2{
+    margin-bottom: 2rem;
+}
+.example-card {
+  max-width: 400px;
+}
+.mat-card {
+  height: auto;
+  background-color: #36454f;
+}
+.mat-card-header {
+  display: flex;
+  flex-direction: row;
+}
 
-  .mb2{
-      margin-bottom: 2rem;
-  }
+.account-login-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.account-login-designation {
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--white);
+}
+
+.mat-card-footer {
+  display: block;
+  margin: 0 -16px -16px -16px;
+}
+
+.mat-card-avatar {
+  height: 60px!important;
+  width: 60px!important;
+  border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.mat-card-header-text {
+  margin: 0 16px;
+}
+
+.whats-new-top-card {
+  height: 46px;
+  background-color: #f2f2f2!important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+  border: none;
+}
