@@ -13,6 +13,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
@@ -45,6 +46,7 @@ import { EmployeeHelpdeskComponent } from './employee-helpdesk/employee-helpdesk
     TruncateModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    MatExpansionModule,
     MatButtonModule,
     MatGridListModule,
     MatListModule,
