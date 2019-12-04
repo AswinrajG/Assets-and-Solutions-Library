@@ -18,7 +18,7 @@ export class DashboardComponent implements OnInit {
                     "Telecom Asset Portal","EY OPS CHAIN ",
                     " BLOCKCHAIN LOYALTY SOLUTION PLATFORM", "ASSET TRACKING "
                   ]
-  public urls = ['asset/KYC (Pol & Biometrics)','enesa','ssl','asset/Vendor On-Boarding and Helpdesk','asset/KPI Dashboard','employeeHelpdesk','','asset/Invoice & PO Processing','asset/Contract Digitization','']
+  public urls = ['kycdigitisation','contractdigitisation','invoicedigitisation','ssi','emailinterpretation','connectedscm','opschain','loyaltysolution','assettracking']
 
   public KYC = `An advanced image processing technology that can extract data from scanned image of proof of identity (PoI) documents such as Passport, National ID cards, PAN card etc. with minimal training data required which otherwise is a manually intensive task.  `;
 
