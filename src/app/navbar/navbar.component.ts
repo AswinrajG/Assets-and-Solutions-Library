@@ -18,7 +18,7 @@ export class NavbarComponent implements OnInit {
   key1: string = 'INDUSTRIES'
   key2: string = 'SECTORS'
   key3: string = 'CAPABILITIES'
-  key4: string = 'NLP'
+  key4: string = 'FUNCTIONS'
   constructor() {
     this.btnStyleGroup1 = ['btn-default','btn-default','btn-default','btn-default','btn-default'];
     this.btnStyleGroup2 = [
@@ -26,7 +26,7 @@ export class NavbarComponent implements OnInit {
                           'btn-default','btn-default','btn-default','btn-default','btn-default','btn-default','btn-default',
                           'btn-default','btn-default','btn-default','btn-default','btn-default'
                           ];
-    this.btnStyleGroup3 = ['btn-default','btn-default','btn-default','btn-default'];
+    this.btnStyleGroup3 = ['btn-default','btn-default','btn-default'];
     this.btnStyleGroup4 = ['btn-default','btn-default','btn-default','btn-default','btn-default'];
    }
   

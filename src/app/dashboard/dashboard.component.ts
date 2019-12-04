@@ -45,12 +45,15 @@ export class DashboardComponent implements OnInit {
   ]
   public industry = ""
   public sector = ""
-
-
+  public capability = ""
+  public function = ""
   public industries	= ['Financial Services', 'Technology, Media & Entertainment and Telecom', 'Advanced Manufacturing & Mobility', 'Consumer', 'Energy']					
   public sectors	 =  ['Consumer Banking',	'General Insurance', 'Individual life insurance',	'Mortgage Finance',	'WAM-Pro',	'Telecom',
                 'Media & Entertainment',	'Automotive Finance',	'Automotive OEM',	'Consumer Products',	'Retail',	'Tobacco',	
                 'Chemicals',	'Mining & Metals',	'Oil & Gas',	'Oil Field Services',	'Power & Utilities',	'Water Utilities']
+  public capabilities = ["InDEx (Digitization)","NLP","Blockchain"]
+  public functions = []
+
 
   public r1data: []
   public r2data: []
@@ -162,6 +165,9 @@ export class DashboardComponent implements OnInit {
     switch(this.group1ClickInfo ) {
       case 1: {
         this.industry = this.industries[0];
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,5);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,6);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,8);
         break;
       }
       case 2: {
@@ -170,21 +176,22 @@ export class DashboardComponent implements OnInit {
       }
       case 3: {
         this.industry = this.industries[2];
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,2);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,3);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,6);
         break;
-        
       }
       case 4: {
         this.industry = this.industries[3];
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,2);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,3);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,6);
         break;
       }
       case 5: {
         this.industry = this.industries[4];
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,2);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,1);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,3);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,4);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,6);
 
         break; 
       }
@@ -193,73 +200,178 @@ export class DashboardComponent implements OnInit {
     switch(this.group2ClickInfo ) {
       case 1: {
         this.sector = this.sectors[0];
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,5);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,6);
+        break;
+      }
+      case 2: {
+        this.sector = this.sectors[1];
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,5);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,6);
+        break; 
+      }
+      case 3: {
+        this.sector = this.sectors[2];
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,5);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,6);
+        break; 
+      }
+      case 4: {
+        this.sector = this.sectors[3];
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,5);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,6);
+        break; 
+      }
+      case 5: {
+        this.sector = this.sectors[4];
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,5);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,6);
+        break; 
+        
+      }
+      case 6: {
+        this.sector = this.sectors[5];
+        break; 
+      }
+      case 7: {
+        this.sector = this.sectors[6];
+        break; 
+      }
+      case 8: {
+        this.sector = this.sectors[7];
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,3);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,6);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,8);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,9);
+        break;
+      }
+      case 9: {
+        this.sector = this.sectors[8];
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,3);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,5);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,6);
+        break; 
+      }
+      case 10: {
+        this.sector = this.sectors[9];
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,3);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,5);
+        break; 
+      }
+      case 11: {
+        this.sector = this.sectors[10];
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,3);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,5);
+        break; 
+      }
+      case 12: {
+        this.sector = this.sectors[11];
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,3);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,5);
+        break; 
+        
+      }
+      case 13: {
+        this.sector = this.sectors[12];
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,3);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,5);
+        break; 
+      }
+      case 14: {
+        this.sector = this.sectors[13];
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,1);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,3);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,4);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,6);
+        break; 
+      }
+      case 15: {
+        this.sector = this.sectors[14];
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,1);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,3);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,4);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,6);
+        break;
+      }
+      case 16: {
+        this.sector = this.sectors[15];
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,1);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,3);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,4);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,6);
+        break; 
+      }
+      case 17: {
+        this.sector = this.sectors[16];
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,1);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,3);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,4);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,6);
+        break; 
+      }
+      case 18: {
+        this.sector = this.sectors[17];
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,1);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,3);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,4);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,6);
+        break; 
+      }
+      case 19: {
+        this.sector = this.sectors[18];
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,1);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,3);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,4);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,6);
+        break; 
+        
+      }
+    }
+
+    switch(this.group3ClickInfo ) {
+      case 1: {
+        this.capability = this.capabilities[0];
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,4);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,5);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,6);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,7);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,8);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,9);
         break;
       }
       case 2: {
-        this.sector = this.sectors[1];
+        this.capability = this.capabilities[1];
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,1);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,2);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,3);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,5);
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,6);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,7);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,8);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,9);
-        break; 
+        break;
       }
       case 3: {
-        this.sector = this.sectors[2];
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,1);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,2);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,9);
-        break; 
-      }
-      case 4: {
-        this.sector = this.sectors[3];
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,1);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,2);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,7);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,8);
-        break; 
-      }
-      case 5: {
-        this.sector = this.sectors[4];
+        this.capability = this.capabilities[2];
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,1);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,2);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,3);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,7);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,8);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,9);
-        break; 
-        
+        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,4);
+        break;
       }
-      case 6: {
-        this.sector = this.sectors[5];
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,1);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,2);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,7);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,8);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,9);
-        break; 
-      }
-      case 7: {
-        this.sector = this.sectors[6];
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,1);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,2);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,7);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,8);
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,9);
-        break; 
-      }
-    }
-
-    switch(this.group3ClickInfo ) {
-      
         
     }
 
@@ -267,7 +379,7 @@ export class DashboardComponent implements OnInit {
     switch(this.group1ClickInfo ) {
       
     }
-    if(this.industry !="" && this.sector != "" )
+    if(this.industry !="" && this.sector != ""  )
       this.industry+=" - "
     visibleData = visibleData.filter(function (el) {
       return el != undefined;
