@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,AfterViewInit,ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent implements OnInit,AfterViewInit {
 
   
   public images = ["Group2_1.png","Group2_2.png","Group2_3.png","Group2_4.png","Group2_5.png",
@@ -68,12 +68,17 @@ export class DashboardComponent implements OnInit {
 
 
 
-  constructor() {
+  constructor(private elementRef: ElementRef) {
     this.arraySpliter(this.data, this.images,this.titles,this.urls)
     
   }
   ngOnInit() {
+    window.scrollTo(0, 0);
   }
+
+  ngAfterViewInit(){
+    this.elementRef.nativeElement.ownerDocument.body.style.overflow = '';
+ }  
 
   arraySpliter(arr,arr1,arr2,arr3 ) {    
   this.r1data = []
