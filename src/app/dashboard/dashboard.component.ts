@@ -15,8 +15,8 @@ export class DashboardComponent implements OnInit,AfterViewInit {
   public titles = ["KYC document digitization","CONTRACT DIGITIZATION",
                     "INVOICE/PURCHASE ORDER DIGITIZATION","STANDARD SETTLEMENT INSTRUCTION (SSI) DIGITIZATION",
                     "EMAIL INTERPRETATION, RESPONSE AND ROUTING","CONNECTED SCM (SUPPLY CHAIN MANAGEMENT) ",
-                    "EY OPS CHAIN "," BLOCKCHAIN LOYALTY SOLUTION PLATFORM",
-                    "ASSET TRACKING "
+                    "Telecom Asset Portal","EY OPS CHAIN ",
+                    " BLOCKCHAIN LOYALTY SOLUTION PLATFORM", "ASSET TRACKING "
                   ]
   public urls = ['kycdigitisation','contractdigitisation','invoicedigitisation','ssi','emailinterpretation','connectedscm','opschain','loyaltysolution','assettracking']
 
@@ -31,6 +31,8 @@ export class DashboardComponent implements OnInit,AfterViewInit {
   public EMAIL_INTERPRETATION  =`An AI based solution for automated email classification, response, routing, and straight through processing of customer queries received by service desk in organizations`;
 
   public CONNECTED_SCM  =`EY opschain based blockchain solution for tracking supply chain transactions between buyer and seller through enhanced visibility and near real time tracking of product movement.`;
+  
+  public Telecom_Asset = `dsgfdf`
 
   public OPS_CHAIN  =`EY Ops Chain is a standardized framework to improve trust and efficiency in business processes and workflows in a private, permissioned blockchain compatible with Ethereum.`;
 
@@ -38,8 +40,8 @@ export class DashboardComponent implements OnInit,AfterViewInit {
 
   public ASSET_TRACKING  =`EY opschain shared blockchain-powered site asset repository that is accessible to all stakeholders (Towerco’s and Opco’s) on desktop and mobile interfaces. test test tsgtdgsbsmndsmnldv vjkwbvbkhvw uw kjwbbubu wb wb bwu`;
   public data = [this.KYC,this.CONTRACT, this.INVOICEorPURCHASE,this.STANDARD_SETTLEMENT,
-                  this.EMAIL_INTERPRETATION,this.CONNECTED_SCM,this.OPS_CHAIN,
-                  this.LOYALTY_SOLUTION,this.ASSET_TRACKING
+                  this.EMAIL_INTERPRETATION,this.CONNECTED_SCM,this.Telecom_Asset,
+                  this.OPS_CHAIN,this.LOYALTY_SOLUTION,this.ASSET_TRACKING
   ]
   public industry = ""
   public sector = ""
