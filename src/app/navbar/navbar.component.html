@@ -12,13 +12,14 @@
                 </mat-panel-title>
 
             </mat-expansion-panel-header>
-            
+                                                                                                                                       														
+
             <mat-action-list>
-                <button mat-button  (click)="evaluateButtonGroup1(1)" [ngClass]="[btnStyleGroup1[0]]" > <img src="../../assets/Group1_1.png " width="30px" class="pr1" /> BFSI</button><br />
-                <button mat-button  (click)="evaluateButtonGroup1(2)" [ngClass]="[btnStyleGroup1[1]]" > <img src="../../assets/Group1_2.png " width="30px" class="pr1" />Telecom</button><br />
-                <button mat-button  (click)="evaluateButtonGroup1(3)" [ngClass]="[btnStyleGroup1[2]]" > <img src="../../assets/Group1_3.png " width="30px" class="pr1" />Retail</button><br />
-                <button mat-button  (click)="evaluateButtonGroup1(4)" [ngClass]="[btnStyleGroup1[3]]" > <img src="../../assets/Group1_4.png " width="30px" class="pr1" />Information Technology</button><br />
-                <button mat-button  (click)="evaluateButtonGroup1(5)" [ngClass]="[btnStyleGroup1[4]]"  class="mb2"> <img src="../../assets/Group1_5.png " width="30px" class="pr1" />Healthcare & Pharmaceuticals</button><br />
+                <button mat-button  (click)="evaluateButtonGroup1(1)" [ngClass]="[btnStyleGroup1[0]]" > <img src="../../assets/Group1_1.png " width="30px" class="pr1" /> Financial Services</button><br />
+                <button mat-button  (click)="evaluateButtonGroup1(2)" [ngClass]="[btnStyleGroup1[1]]" > <img src="../../assets/Group1_2.png " width="30px" class="pr1" />Technology, Media & Entertainment and Telecom</button><br />
+                <button mat-button  (click)="evaluateButtonGroup1(3)" [ngClass]="[btnStyleGroup1[2]]" > <img src="../../assets/Group1_3.png " width="30px" class="pr1" />Advanced Manufacturing & Mobility</button><br />
+                <button mat-button  (click)="evaluateButtonGroup1(4)" [ngClass]="[btnStyleGroup1[3]]" > <img src="../../assets/Group1_4.png " width="30px" class="pr1" />Consumer</button><br />
+                <button mat-button  (click)="evaluateButtonGroup1(5)" [ngClass]="[btnStyleGroup1[4]]"  class="mb2"> <img src="../../assets/Group1_5.png " width="30px" class="pr1" />Energy</button><br />
             </mat-action-list>
             </mat-expansion-panel>
         </mat-accordion>
@@ -29,19 +30,32 @@
             <mat-expansion-panel>
             <mat-expansion-panel-header>
                 <mat-panel-title>
-                    <h4> SECTOR</h4>
+                    <h4> SECTORS</h4>
                 </mat-panel-title>
 
             </mat-expansion-panel-header>
-            
+            <!-- 	 	                                                                                                                   										Water Utilities -->
+      
             <mat-action-list>
-                <button mat-button (click)= "evaluateButtonGroup2(1)" [ngClass]="[btnStyleGroup2[0]]" > <img src="../../assets/Group1_6.png" width="30px" class="pr1" />Operations</button><br />
-                <button mat-button (click)= "evaluateButtonGroup2(2)" [ngClass]="[btnStyleGroup2[1]]" > <img src="../../assets/Group1_7.png" width="30px" class="pr1" />Marketing & Sales</button><br />
-                <button mat-button (click)= "evaluateButtonGroup2(3)" [ngClass]="[btnStyleGroup2[2]]" > <img src="../../assets/Group1_8.png" width="30px" class="pr1" />Finance</button><br />
-                <button mat-button (click)= "evaluateButtonGroup2(4)" [ngClass]="[btnStyleGroup2[3]]" > <img src="../../assets/Group1_9.png" width="30px" class="pr1" />Human Resources</button><br />
-                <button mat-button (click)= "evaluateButtonGroup2(5)" [ngClass]="[btnStyleGroup2[4]]" > <img src="../../assets/Group1_10.png" width="30px" class="pr1" />Information technology</button><br />
-                <button mat-button (click)= "evaluateButtonGroup2(6)" [ngClass]="[btnStyleGroup2[5]]" > <img src="../../assets/Group1_11.png" width="30px" class="pr1" />Supply Chain</button><br />
-                <button mat-button (click)= "evaluateButtonGroup2(7)" [ngClass]="[btnStyleGroup2[6]]" class="mb2"> <img src="../../assets/Group1_12.png" width="30px" class="pr1" />Legal</button><br />
+                <button mat-button (click)= "evaluateButtonGroup2(1)" [ngClass]="[btnStyleGroup2[0]]" > <img src="../../assets/Group1_6.png" width="30px" class="pr1" />Consumer Banking</button><br />
+                <button mat-button (click)= "evaluateButtonGroup2(2)" [ngClass]="[btnStyleGroup2[1]]" > <img src="../../assets/Group1_7.png" width="30px" class="pr1" />General Insurance</button><br />
+                <button mat-button (click)= "evaluateButtonGroup2(3)" [ngClass]="[btnStyleGroup2[2]]" > <img src="../../assets/Group1_8.png" width="30px" class="pr1" />Individual life insurance</button><br />
+                <button mat-button (click)= "evaluateButtonGroup2(4)" [ngClass]="[btnStyleGroup2[3]]" > <img src="../../assets/Group1_9.png" width="30px" class="pr1" />Mortgage Finance</button><br />
+                <button mat-button (click)= "evaluateButtonGroup2(5)" [ngClass]="[btnStyleGroup2[4]]" > <img src="../../assets/Group1_10.png" width="30px" class="pr1" /> WAM-Pro </button><br />
+                <button mat-button (click)= "evaluateButtonGroup2(6)" [ngClass]="[btnStyleGroup2[5]]" > <img src="../../assets/Group1_11.png" width="30px" class="pr1" /> Telecom </button><br />
+                <button mat-button (click)= "evaluateButtonGroup2(7)" [ngClass]="[btnStyleGroup2[6]]" > <img src="../../assets/Group1_6.png" width="30px" class="pr1" /> Media & Entertainment </button><br />
+                <button mat-button (click)= "evaluateButtonGroup2(8)" [ngClass]="[btnStyleGroup2[7]]" > <img src="../../assets/Group1_7.png" width="30px" class="pr1" /> Automotive Finance </button><br />
+                <button mat-button (click)= "evaluateButtonGroup2(9)" [ngClass]="[btnStyleGroup2[8]]" > <img src="../../assets/Group1_8.png" width="30px" class="pr1" /> Automotive OEM </button><br />
+                <button mat-button (click)="evaluateButtonGroup2(10)" [ngClass]="[btnStyleGroup2[9]]" > <img src="../../assets/Group1_9.png" width="30px" class="pr1" /> Beverage </button><br />
+                <button mat-button (click)="evaluateButtonGroup2(11)" [ngClass]="[btnStyleGroup2[10]]" > <img src="../../assets/Group1_10.png" width="30px" class="pr1" /> Consumer Products </button><br />
+                <button mat-button (click)="evaluateButtonGroup2(12)" [ngClass]="[btnStyleGroup2[11]]" > <img src="../../assets/Group1_11.png" width="30px" class="pr1" /> Retail </button><br />
+                <button mat-button (click)="evaluateButtonGroup2(13)" [ngClass]="[btnStyleGroup2[12]]" > <img src="../../assets/Group1_6.png" width="30px" class="pr1" />Tobacco </button><br />
+                <button mat-button (click)="evaluateButtonGroup2(14)" [ngClass]="[btnStyleGroup2[13]]" > <img src="../../assets/Group1_7.png" width="30px" class="pr1" /> Chemicals </button><br />
+                <button mat-button (click)="evaluateButtonGroup2(15)" [ngClass]="[btnStyleGroup2[14]]" > <img src="../../assets/Group1_8.png" width="30px" class="pr1" />Mining & Metals </button><br />
+                <button mat-button (click)="evaluateButtonGroup2(16)" [ngClass]="[btnStyleGroup2[15]]" > <img src="../../assets/Group1_9.png" width="30px" class="pr1" /> Oil & Gas </button><br />
+                <button mat-button (click)="evaluateButtonGroup2(17)" [ngClass]="[btnStyleGroup2[16]]" > <img src="../../assets/Group1_10.png" width="30px" class="pr1" /> Oil Field Services </button><br />
+                <button mat-button (click)="evaluateButtonGroup2(18)" [ngClass]="[btnStyleGroup2[17]]" > <img src="../../assets/Group1_11.png" width="30px" class="pr1" /> Power & Utilities </button><br />
+                <button mat-button (click)="evaluateButtonGroup2(19)" [ngClass]="[btnStyleGroup2[18]]" class="mb2"> <img src="../../assets/Group1_12.png" width="30px" class="pr1" />Water Utilities</button><br />
             </mat-action-list>
             </mat-expansion-panel>
         </mat-accordion>
@@ -54,17 +68,16 @@
             <mat-expansion-panel>
             <mat-expansion-panel-header>
                 <mat-panel-title>
-                        <h4>DOMAIN</h4>
+                    <h4>CAPABILITIES </h4>
                 </mat-panel-title>
 
             </mat-expansion-panel-header>
             
             <mat-action-list>
-                <button mat-button  (click)="evaluateButtonGroup1(1)" [ngClass]="[btnStyleGroup1[0]]" > <img src="../../assets/Group1_1.png " width="30px" class="pr1" /> BFSI</button><br />
-                <button mat-button  (click)="evaluateButtonGroup1(2)" [ngClass]="[btnStyleGroup1[1]]" > <img src="../../assets/Group1_2.png " width="30px" class="pr1" />Telecom</button><br />
-                <button mat-button  (click)="evaluateButtonGroup1(3)" [ngClass]="[btnStyleGroup1[2]]" > <img src="../../assets/Group1_3.png " width="30px" class="pr1" />Retail</button><br />
-                <button mat-button  (click)="evaluateButtonGroup1(4)" [ngClass]="[btnStyleGroup1[3]]" > <img src="../../assets/Group1_4.png " width="30px" class="pr1" />Information Technology</button><br />
-                <button mat-button  (click)="evaluateButtonGroup1(5)" [ngClass]="[btnStyleGroup1[4]]"  class="mb2"> <img src="../../assets/Group1_5.png " width="30px" class="pr1" />Healthcare & Pharmaceuticals</button><br />
+                <button mat-button  (click)="evaluateButtonGroup3(1)" [ngClass]="[btnStyleGroup3[0]]" > <img src="../../assets/Group1_1.png " width="30px" class="pr1" /> InDEx (Digitization)</button><br />
+                <button mat-button  (click)="evaluateButtonGroup3(2)" [ngClass]="[btnStyleGroup3[1]]" > <img src="../../assets/Group1_2.png " width="30px" class="pr1" />InDEx (Digitization)</button><br />
+                <button mat-button  (click)="evaluateButtonGroup3(3)" [ngClass]="[btnStyleGroup3[2]]" > <img src="../../assets/Group1_3.png " width="30px" class="pr1" />InDEx (Digitization)</button><br />
+                <button mat-button  (click)="evaluateButtonGroup3(4)" [ngClass]="[btnStyleGroup3[3]]"  class="mb2"> <img src="../../assets/Group1_5.png " width="30px" class="pr1" />InDEx (Digitization)</button><br />
             </mat-action-list>
             </mat-expansion-panel>
         </mat-accordion>
@@ -77,17 +90,17 @@
             <mat-expansion-panel>
             <mat-expansion-panel-header>
                 <mat-panel-title>
-                        <h4>BUSINESS</h4>
+                    <h4>NLP</h4>
                 </mat-panel-title>
 
             </mat-expansion-panel-header>
             
             <mat-action-list>
-                <button mat-button  (click)="evaluateButtonGroup1(1)" [ngClass]="[btnStyleGroup1[0]]" > <img src="../../assets/Group1_1.png " width="30px" class="pr1" /> BFSI</button><br />
-                <button mat-button  (click)="evaluateButtonGroup1(2)" [ngClass]="[btnStyleGroup1[1]]" > <img src="../../assets/Group1_2.png " width="30px" class="pr1" />Telecom</button><br />
-                <button mat-button  (click)="evaluateButtonGroup1(3)" [ngClass]="[btnStyleGroup1[2]]" > <img src="../../assets/Group1_3.png " width="30px" class="pr1" />Retail</button><br />
-                <button mat-button  (click)="evaluateButtonGroup1(4)" [ngClass]="[btnStyleGroup1[3]]" > <img src="../../assets/Group1_4.png " width="30px" class="pr1" />Information Technology</button><br />
-                <button mat-button  (click)="evaluateButtonGroup1(5)" [ngClass]="[btnStyleGroup1[4]]"  class="mb2"> <img src="../../assets/Group1_5.png " width="30px" class="pr1" />Healthcare & Pharmaceuticals</button><br />
+                <button mat-button  (click)="evaluateButtonGroup4(1)" [ngClass]="[btnStyleGroup4[0]]" > <img src="../../assets/Group1_1.png " width="30px" class="pr1" /> Blockchain</button><br />
+                <button mat-button  (click)="evaluateButtonGroup4(2)" [ngClass]="[btnStyleGroup4[1]]" > <img src="../../assets/Group1_2.png " width="30px" class="pr1" />Blockchain</button><br />
+                <button mat-button  (click)="evaluateButtonGroup4(3)" [ngClass]="[btnStyleGroup4[2]]" > <img src="../../assets/Group1_3.png " width="30px" class="pr1" />Blockchain</button><br />
+                <button mat-button  (click)="evaluateButtonGroup4(4)" [ngClass]="[btnStyleGroup4[3]]" > <img src="../../assets/Group1_4.png " width="30px" class="pr1" />Blockchain</button><br />
+                <button mat-button  (click)="evaluateButtonGroup4(5)" [ngClass]="[btnStyleGroup4[4]]"  class="mb2"> <img src="../../assets/Group1_5.png " width="30px" class="pr1" />Blockchain</button><br />
             </mat-action-list>
             </mat-expansion-panel>
         </mat-accordion>

@@ -12,73 +12,44 @@ export class DashboardComponent implements OnInit {
                     "Group2_6.png","Group2_7.png","Group2_8.png","Group2_9.png","Group2_10.png"
                   ]
 
-  public titles = ["KYC (Pol & Biometrics)","ENESA",
-                    "SSI Extraction","Vendor On-Boarding and Helpdesk",
-                    "KPI Dashboard","Employee Helpdesk",
-                    "Customized Alert","Invoice & PO Processing",
-                    "Contract Digitization","Employee Satisfaction Survey"
+  public titles = ["KYC document digitization","CONTRACT DIGITIZATION",
+                    "INVOICE/PURCHASE ORDER DIGITIZATION","STANDARD SETTLEMENT INSTRUCTION (SSI) DIGITIZATION",
+                    "EMAIL INTERPRETATION, RESPONSE AND ROUTING","CONNECTED SCM (SUPPLY CHAIN MANAGEMENT) ",
+                    "EY OPS CHAIN "," BLOCKCHAIN LOYALTY SOLUTION PLATFORM",
+                    "ASSET TRACKING "
                   ]
   public urls = ['kycdigit','enesa','ssl','asset/Vendor On-Boarding and Helpdesk','asset/KPI Dashboard','employeeHelpdesk','','asset/Invoice & PO Processing','asset/Contract Digitization','']
 
-  public KYC = `EY’s KYC digitization solution reliably extracts information from scanned images 
-  of proof of identity (PoI) documents such as passport, PAN, national ID cards etc. with minimal 
-  training effort. The solution also enables quality and compliance testing along with comparison 
-  using biometric data. `;
+  public KYC = `An advanced image processing technology that can extract data from scanned image of proof of identity (PoI) documents such as Passport, National ID cards, PAN card etc. with minimal training data required which otherwise is a manually intensive task.  `;
 
-  public ENESA =`Many functions within any organization such as customer support, help desks etc. 
-  have to deal with user generated queries. These queries are received via multiple channels such 
-  as Email, Web, Phone, Chat etc. Due to the unstructured nature of the data, the queries require 
-  human agents for resolution, thus making it a very costly and time consuming process.
-  ENESA is a unique solution build by EY which uses Natural Language Processing (NLP) to interpret 
-  the query, which is then automatically classified, tagged and allocated in a BPM/Ticketing system. 
-  ENESA sends acknowledgement, filters spam and auto resolves cases that doesn’t require human judgement.`;
+  public CONTRACT =`EY’s digital contract module uses advance AI algorithms to extract most commonly used information such as clauses, tabular information and key entities such as dates and names.`;
 
-  public SSI_Extraction =`Across organizations there are various documents containing tabular data 
-  in different unstructured formats coming from different sources which require human intervention 
-  for standardization and further processing. EY has built a customisable solution which can be 
-  leveraged to extract tabular information efficiently from different document formats automatically 
-  henceforth reducing processing time and saving manual effort.`;
+  public INVOICEorPURCHASE =`Accounts payable/receivable departments of different organisations receive purchase orders and invoices from multiple vendors. Relevant data is extracted from these documents and fed into the ERP systems. EY has developed a customized solution involving digitization tools and RPA to process these documents and enter the details in the ERP systems thus reducing manual effort, processing time, error and increasing efficiency.`;
 
-  public VendorOn_Boarding  =`Vendor management is a major task in most of the organizations. 
-  EY’s vendor onboarding and helpdesk bot helps the vendors receive quick support and immediate 
-  responses to their queries during onboarding and afterwards directly on Kaizala. It helps save 
-  time and makes the process smooth in terms of the vendor experience.`;
+  public STANDARD_SETTLEMENT  =`Across organizations there are various documents containing tabular data in different unstructured formats coming from different sources which require human intervention for standardization and further processing. EY has built a customisable solution which can be leveraged to extract tabular information efficiently from different document formats automatically henceforth reducing processing time and saving manual effort.`;
 
-  public KPI_Dashboard  =`Employees in any team of an organization have to access multiple systems or 
-  reach out to various teams to gather insight into their KPIs and achievements. EY’s KPI dashboarding 
-  solution provides instant access to the team to their KPIs and dashboards on the Kaizala app. Management 
-  dashboards may also be viewed directly on the app, restricting user access as per requirement.`;
+  public EMAIL_INTERPRETATION  =`An AI based solution for automated email classification, response, routing, and straight through processing of customer queries received by service desk in organizations`;
 
-  public Employee_Helpdesk  =`Quick answers for all employee queries on the go – using EY’s employee 
-  helpdesk solution, the employees get immediate responses to their queries on Kaizala app.`;
+  public CONNECTED_SCM  =`EY opschain based blockchain solution for tracking supply chain transactions between buyer and seller through enhanced visibility and near real time tracking of product movement.`;
 
-  public Customized_Alert  =`Have periodic updates that need to be sent out to your team? Using EY’s 
-  customized alert bot, such updates can be automatically sent to the employees on Kaizala. It has 
-  the capability to schedule alerts, define the recipients and also capture employee’s response on 
-  it for further action or review.`;
+  public OPS_CHAIN  =`EY Ops Chain is a standardized framework to improve trust and efficiency in business processes and workflows in a private, permissioned blockchain compatible with Ethereum.`;
 
-  public Invoice =`Accounts payable/receivable departments of different organizations receive purchase 
-  orders and invoices from multiple vendors. Relevant data is extracted from these documents and fed 
-  into the ERP systems. EY has developed a customized solution involving digitization tools and RPA to 
-  process these documents and enter the details in the ERP systems thus reducing manual effort, processing 
-  time, error and increasing efficiency.`;
+  public  LOYALTY_SOLUTION =`EY Blockchain Loyalty Solution platform enables seamless loyalty points management among stakeholders, secure real-time transactions with increased accuracy, intelligent insights and connected ecosystem with better customer experience`;
 
-  public ContractDigitization  =`Every organization manages contracts such as service agreements, lease, SOW etc. 
-  A qualified legal team is required to understand and manage these contracts. EY has build this solution which 
-  helps to extract most commonly used information from the contracts automatically thereby significantly reducing 
-  the cost and improving efficiency.`;
-
-  public Survey =`HR in any organization usually float surveys to employees through various channels like mail, 
-  forms etc. EY’s employee satisfaction survey solution on Kaizala provides a single platform to roll out the 
-  survey, engage employees, receive their responses, and provide relevant insights over it using any BI tool. `;
-  public data = [this.KYC,this.ENESA, this.SSI_Extraction,this.VendorOn_Boarding,
-                  this.KPI_Dashboard,this.Employee_Helpdesk,this.Customized_Alert,
-                  this.Invoice,this.ContractDigitization, this.Survey
+  public ASSET_TRACKING  =`EY opschain shared blockchain-powered site asset repository that is accessible to all stakeholders (Towerco’s and Opco’s) on desktop and mobile interfaces. test test tsgtdgsbsmndsmnldv vjkwbvbkhvw uw kjwbbubu wb wb bwu`;
+  public data = [this.KYC,this.CONTRACT, this.INVOICEorPURCHASE,this.STANDARD_SETTLEMENT,
+                  this.EMAIL_INTERPRETATION,this.CONNECTED_SCM,this.OPS_CHAIN,
+                  this.LOYALTY_SOLUTION,this.ASSET_TRACKING
   ]
   public industry = ""
-  public function = ""
-  public industries = ['BFSI', 'Telecom', 'Retail', 'Information Technology', 'Healthcare']
-  public functions = ['Operations', 'Marketing & Sales', 'Finance', 'Human Resources', 'Information technology', 'Supply Chain','Legal']
+  public sector = ""
+
+
+  public industries	= ['Financial Services', 'Technology, Media & Entertainment and Telecom', 'Advanced Manufacturing & Mobility', 'Consumer', 'Energy']					
+  public sectors	 =  ['Consumer Banking',	'General Insurance', 'Individual life insurance',	'Mortgage Finance',	'WAM-Pro',	'Telecom',
+                'Media & Entertainment',	'Automotive Finance',	'Automotive OEM',	'Consumer Products',	'Retail',	'Tobacco',	
+                'Chemicals',	'Mining & Metals',	'Oil & Gas',	'Oil Field Services',	'Power & Utilities',	'Water Utilities']
+
   public r1data: []
   public r2data: []
   public r3data: []
@@ -172,12 +143,16 @@ export class DashboardComponent implements OnInit {
 
   group1ClickInfo: any;
   group2ClickInfo: any;
+  group3ClickInfo: any;
+  group4ClickInfo: any;
 
   async getClickInfo(Value) {
     this.industry = ""
-    this.function = ""
+    this.sector = ""
     this.group1ClickInfo = Value.Group1;
     this.group2ClickInfo = Value.Group2
+    this.group3ClickInfo = Value.Group3;
+    this.group4ClickInfo = Value.Group4
     let visibleData = [...this.data]
     let visibleImages = [...this.images]
     let visibleTitles = [...this.titles]
@@ -189,7 +164,6 @@ export class DashboardComponent implements OnInit {
       }
       case 2: {
         this.industry = this.industries[1];
-        await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,2);
         break;
       }
       case 3: {
@@ -216,14 +190,14 @@ export class DashboardComponent implements OnInit {
 
     switch(this.group2ClickInfo ) {
       case 1: {
-        this.function = this.functions[0];
+        this.sector = this.sectors[0];
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,7);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,8);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,9);
         break;
       }
       case 2: {
-        this.function = this.functions[1];
+        this.sector = this.sectors[1];
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,2);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,3);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,7);
@@ -232,7 +206,7 @@ export class DashboardComponent implements OnInit {
         break; 
       }
       case 3: {
-        this.function = this.functions[2];
+        this.sector = this.sectors[2];
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,1);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,2);
@@ -240,7 +214,7 @@ export class DashboardComponent implements OnInit {
         break; 
       }
       case 4: {
-        this.function = this.functions[3];
+        this.sector = this.sectors[3];
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,1);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,2);
@@ -249,7 +223,7 @@ export class DashboardComponent implements OnInit {
         break; 
       }
       case 5: {
-        this.function = this.functions[4];
+        this.sector = this.sectors[4];
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,1);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,2);
@@ -261,7 +235,7 @@ export class DashboardComponent implements OnInit {
         
       }
       case 6: {
-        this.function = this.functions[5];
+        this.sector = this.sectors[5];
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,1);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,2);
@@ -271,7 +245,7 @@ export class DashboardComponent implements OnInit {
         break; 
       }
       case 7: {
-        this.function = this.functions[6];
+        this.sector = this.sectors[6];
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,0);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,1);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,2);
@@ -281,7 +255,17 @@ export class DashboardComponent implements OnInit {
         break; 
       }
     }
-    if(this.industry !="" && this.function != "" )
+
+    switch(this.group3ClickInfo ) {
+      
+        
+    }
+
+
+    switch(this.group1ClickInfo ) {
+      
+    }
+    if(this.industry !="" && this.sector != "" )
       this.industry+=" - "
     visibleData = visibleData.filter(function (el) {
       return el != undefined;
