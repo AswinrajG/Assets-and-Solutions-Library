@@ -18,7 +18,7 @@ export class DashboardComponent implements OnInit,AfterViewInit {
                     "Telecom_Asset","EY OPS CHAIN ",
                     " BLOCKCHAIN LOYALTY SOLUTION PLATFORM", "ASSET TRACKING "
                   ]
-  public urls = ['kycdigitisation','contractdigitisation','invoicedigitisation','ssi','emailinterpretation','connectedscm','opschain','loyaltysolution','assettracking']
+  public urls = ['kycdigitisation','contractdigitisation','invoicedigitisation','ssi','emailinterpretation','connectedscm','assettracking','opschain','loyaltysolution','assettracking']
 
   public KYC = `An advanced image processing technology that can extract data from scanned image of proof of identity (PoI) documents such as Passport, National ID cards, PAN card etc. with minimal training data required which otherwise is a manually intensive task.  `;
 
