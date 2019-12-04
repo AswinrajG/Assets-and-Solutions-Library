@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,AfterViewInit,ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent implements OnInit,AfterViewInit {
 
   
   public images = ["Group2_1.png","Group2_2.png","Group2_3.png","Group2_4.png","Group2_5.png",
@@ -15,7 +15,7 @@ export class DashboardComponent implements OnInit {
   public titles = ["KYC document digitization","CONTRACT DIGITIZATION",
                     "INVOICE/PURCHASE ORDER DIGITIZATION","STANDARD SETTLEMENT INSTRUCTION (SSI) DIGITIZATION",
                     "EMAIL INTERPRETATION, RESPONSE AND ROUTING","CONNECTED SCM (SUPPLY CHAIN MANAGEMENT) ",
-                    "Telecom Asset Portal","EY OPS CHAIN ",
+                    "EY OPS CHAIN ",
                     " BLOCKCHAIN LOYALTY SOLUTION PLATFORM", "ASSET TRACKING "
                   ]
   public urls = ['kycdigitisation','contractdigitisation','invoicedigitisation','ssi','emailinterpretation','connectedscm','opschain','loyaltysolution','assettracking']
@@ -32,7 +32,7 @@ export class DashboardComponent implements OnInit {
 
   public CONNECTED_SCM  =`EY opschain based blockchain solution for tracking supply chain transactions between buyer and seller through enhanced visibility and near real time tracking of product movement.`;
   
-  public Telecom_Asset = `dsgfdf`
+  // public Telecom_Asset = `dsgfdf`
 
   public OPS_CHAIN  =`EY Ops Chain is a standardized framework to improve trust and efficiency in business processes and workflows in a private, permissioned blockchain compatible with Ethereum.`;
 
@@ -40,7 +40,7 @@ export class DashboardComponent implements OnInit {
 
   public ASSET_TRACKING  =`EY opschain shared blockchain-powered site asset repository that is accessible to all stakeholders (Towerco’s and Opco’s) on desktop and mobile interfaces. test test tsgtdgsbsmndsmnldv vjkwbvbkhvw uw kjwbbubu wb wb bwu`;
   public data = [this.KYC,this.CONTRACT, this.INVOICEorPURCHASE,this.STANDARD_SETTLEMENT,
-                  this.EMAIL_INTERPRETATION,this.CONNECTED_SCM,this.Telecom_Asset,
+                  this.EMAIL_INTERPRETATION,this.CONNECTED_SCM,
                   this.OPS_CHAIN,this.LOYALTY_SOLUTION,this.ASSET_TRACKING
   ]
   public industry = ""
@@ -73,12 +73,17 @@ export class DashboardComponent implements OnInit {
 
 
 
-  constructor() {
+  constructor(private elementRef: ElementRef) {
     this.arraySpliter(this.data, this.images,this.titles,this.urls)
     
   }
   ngOnInit() {
+    window.scrollTo(0, 0);
   }
+
+  ngAfterViewInit(){
+    this.elementRef.nativeElement.ownerDocument.body.style.overflow = '';
+ }  
 
   arraySpliter(arr,arr1,arr2,arr3 ) {    
   this.r1data = []
