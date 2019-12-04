@@ -7,6 +7,14 @@ import { EmailAutomationComponent} from "../email-automation/email-automation.co
 import { SslAssetComponent} from "../ssl-asset/ssl-asset.component";
 import { EmployeeHelpdeskComponent} from "../employee-helpdesk/employee-helpdesk.component";
 import { KycDigitisationComponent} from "../kyc-digitisation/kyc-digitisation.component";
+import { ContractDigitizationComponent} from "../contract-digitization/contract-digitization.component";
+import { InvoiceDigitizationComponent} from "../invoice-digitization/invoice-digitization.component";
+import { SsiDigitizationComponent} from "../ssi-digitization/ssi-digitization.component";
+import { EmailInterpretationComponent} from "../email-interpretation/email-interpretation.component";
+import { ConnectedScmComponent} from "../connected-scm/connected-scm.component";
+import { EyOpschainComponent} from "../ey-opschain/ey-opschain.component";
+import { LoyaltySolutionComponent } from '../loyalty-solution/loyalty-solution.component';
+import { AssetTrackingComponent } from '../asset-tracking/asset-tracking.component';
 
 const routes: Routes = [
   { path:'',redirectTo: '/home', pathMatch: 'full' },
@@ -16,7 +24,15 @@ const routes: Routes = [
   { path:"enesa", component:EmailAutomationComponent },
   { path:"ssl", component:SslAssetComponent },
   { path:"employeeHelpdesk", component:EmployeeHelpdeskComponent },
-  { path:"kycdigit", component:KycDigitisationComponent }
+  { path:"kycdigitisation", component:KycDigitisationComponent },
+  { path:"contractdigitisation", component:ContractDigitizationComponent },
+  { path:"invoicedigitisation", component:InvoiceDigitizationComponent },
+  { path:"ssi", component:SsiDigitizationComponent },
+  { path:"emailinterpretation", component:EmailInterpretationComponent },
+  { path:"connectedscm", component:ConnectedScmComponent },
+  { path:"opschain", component:EyOpschainComponent },
+  { path:"loyaltysolution", component:LoyaltySolutionComponent },
+  { path:"assettracking", component:AssetTrackingComponent },
 
 ];
 
