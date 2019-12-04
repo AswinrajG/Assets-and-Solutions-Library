@@ -18,7 +18,7 @@ export class DashboardComponent implements OnInit {
                     "Customized Alert","Invoice & PO Processing",
                     "Contract Digitization","Employee Satisfaction Survey"
                   ]
-  public urls = ['asset/KYC (Pol & Biometrics)','enesa','ssl','asset/Vendor On-Boarding and Helpdesk','asset/KPI Dashboard','employeeHelpdesk','','asset/Invoice & PO Processing','asset/Contract Digitization','']
+  public urls = ['kycdigit','enesa','ssl','asset/Vendor On-Boarding and Helpdesk','asset/KPI Dashboard','employeeHelpdesk','','asset/Invoice & PO Processing','asset/Contract Digitization','']
 
   public KYC = `EY’s KYC digitization solution reliably extracts information from scanned images 
   of proof of identity (PoI) documents such as passport, PAN, national ID cards etc. with minimal 

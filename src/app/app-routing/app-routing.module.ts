@@ -6,7 +6,7 @@ import { AssetDetailsComponent} from "../asset-details/asset-details.component";
 import { EmailAutomationComponent} from "../email-automation/email-automation.component";
 import { SslAssetComponent} from "../ssl-asset/ssl-asset.component";
 import { EmployeeHelpdeskComponent} from "../employee-helpdesk/employee-helpdesk.component";
-
+import { KycDigitisationComponent} from "../kyc-digitisation/kyc-digitisation.component";
 
 const routes: Routes = [
   { path:'',redirectTo: '/home', pathMatch: 'full' },
@@ -16,6 +16,7 @@ const routes: Routes = [
   { path:"enesa", component:EmailAutomationComponent },
   { path:"ssl", component:SslAssetComponent },
   { path:"employeeHelpdesk", component:EmployeeHelpdeskComponent },
+  { path:"kycdigit", component:KycDigitisationComponent }
 
 ];
 

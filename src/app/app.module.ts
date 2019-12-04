@@ -24,6 +24,15 @@ import { AssetDetailsComponent } from './asset-details/asset-details.component';
 import { EmailAutomationComponent } from './email-automation/email-automation.component';
 import { SslAssetComponent } from './ssl-asset/ssl-asset.component';
 import { EmployeeHelpdeskComponent } from './employee-helpdesk/employee-helpdesk.component';
+import { KycDigitisationComponent } from './kyc-digitisation/kyc-digitisation.component';
+import { ContractDigitizationComponent } from './contract-digitization/contract-digitization.component';
+import { InvoiceDigitizationComponent } from './invoice-digitization/invoice-digitization.component';
+import { SsiDigitizationComponent } from './ssi-digitization/ssi-digitization.component';
+import { EmailInterpretationComponent } from './email-interpretation/email-interpretation.component';
+import { ConnectedScmComponent } from './connected-scm/connected-scm.component';
+import { EyOpschainComponent } from './ey-opschain/ey-opschain.component';
+import { LoyaltySolutionComponent } from './loyalty-solution/loyalty-solution.component';
+import { AssetTrackingComponent } from './asset-tracking/asset-tracking.component';
 
 
 
@@ -39,7 +48,16 @@ import { EmployeeHelpdeskComponent } from './employee-helpdesk/employee-helpdesk
     AssetDetailsComponent,
     EmailAutomationComponent,
     SslAssetComponent,
-    EmployeeHelpdeskComponent
+    EmployeeHelpdeskComponent,
+    KycDigitisationComponent,
+    ContractDigitizationComponent,
+    InvoiceDigitizationComponent,
+    SsiDigitizationComponent,
+    EmailInterpretationComponent,
+    ConnectedScmComponent,
+    EyOpschainComponent,
+    LoyaltySolutionComponent,
+    AssetTrackingComponent
   ],
   imports: [
     BrowserModule,
