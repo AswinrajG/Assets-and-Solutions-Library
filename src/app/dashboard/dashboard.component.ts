@@ -197,8 +197,10 @@ export class DashboardComponent implements OnInit,AfterViewInit {
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,3);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,4);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,6);
-
         break; 
+      }
+      case 100: {
+        this.industry = "";
       }
     }
 
@@ -339,8 +341,10 @@ export class DashboardComponent implements OnInit,AfterViewInit {
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,3);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,4);
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,6);
-        break; 
-        
+        break;         
+      }
+      case 100: {
+        this.sector = "";
       }
     }
 
@@ -377,15 +381,26 @@ export class DashboardComponent implements OnInit,AfterViewInit {
         await this.elementRemover(visibleData,visibleImages,visibleTitles,visibleUrls,4);
         break;
       }
+      case 100: {
+        this.capability = "";
+      }
         
     }
 
 
-    switch(this.group1ClickInfo ) {
+    switch(this.group4ClickInfo ) {
       
     }
+
     if(this.industry !="" && this.sector != ""  )
       this.industry+=" - "
+
+    if(this.sector !="" && this.capability != ""  )
+      this.sector+=" - "
+
+    if(this.capability !="" && this.function != ""  )
+      this.capability+=" - "
+      
     visibleData = visibleData.filter(function (el) {
       return el != undefined;
     });
