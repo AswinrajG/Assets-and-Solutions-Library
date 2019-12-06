@@ -57,6 +57,7 @@ export class NavbarComponent implements OnInit {
     let group3Value = parseInt(localStorage.getItem(this.key3),10);
     let group4Value = parseInt(localStorage.getItem(this.key4),10);
     if(flag == 'Unselect'){
+      localStorage.removeItem(this.key1);
       this.btnStyleGroup1[Value -1] = 'btn-default';
       Value=100
   }
@@ -83,6 +84,7 @@ export class NavbarComponent implements OnInit {
     let group4Value = parseInt(localStorage.getItem(this.key4),10);
     if(flag == 'Unselect'){
       this.btnStyleGroup2[Value -1] = 'btn-default';
+      localStorage.removeItem(this.key2);
       Value=100
   }
     this.clickInfo.emit({'Group1' : group1Value, 'Group2' :Value, 'Group3' :group3Value, 'Group4' :group4Value} )
@@ -108,6 +110,7 @@ export class NavbarComponent implements OnInit {
     let group2Value = parseInt(localStorage.getItem(this.key2),10);
     let group4Value = parseInt(localStorage.getItem(this.key4),10);
     if(flag == 'Unselect'){
+      localStorage.removeItem(this.key3);
         this.btnStyleGroup3[Value -1] = 'btn-default';
         Value=100
     }
@@ -133,6 +136,7 @@ export class NavbarComponent implements OnInit {
     let group2Value = parseInt(localStorage.getItem(this.key2),10);
     let group3Value = parseInt(localStorage.getItem(this.key3),10);
     if(flag == 'Unselect'){
+      localStorage.removeItem(this.key4);
       this.btnStyleGroup4[Value -1] = 'btn-default';
       Value=100
   }
