@@ -24,7 +24,7 @@ export class BoxComponent {
   @Input() image: string
   @Input() title: string;
   @Input() urls: string;
-  public limit: number = 160;
+  public limit: number = 130;
   truncating = true;
 
   currentState:any='initial';

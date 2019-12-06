@@ -27,7 +27,11 @@ export class NavbarComponent implements OnInit {
                           'btn-default','btn-default','btn-default','btn-default','btn-default'
                           ];
     this.btnStyleGroup3 = ['btn-default','btn-default','btn-default'];
-    this.btnStyleGroup4 = ['btn-default','btn-default','btn-default','btn-default','btn-default'];
+    this.btnStyleGroup4 = [
+                          'btn-default','btn-default','btn-default','btn-default','btn-default', 'btn-default',
+                          'btn-default','btn-default','btn-default','btn-default','btn-default', 'btn-default',
+                          'btn-default','btn-default','btn-default','btn-default','btn-default'
+                          ];
    }
   
   ngOnInit() {
